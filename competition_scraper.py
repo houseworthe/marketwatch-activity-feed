@@ -12,6 +12,8 @@ from datetime import datetime
 from typing import List, Dict, Optional, Tuple
 import json
 import time
+import firebase_admin
+from firebase_admin import credentials, db
 
 
 @dataclass
@@ -113,16 +115,69 @@ class CompetitionScraper:
             'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
         }
     
-    def get_leaderboard(self) -> List[Tuple[str, str]]:
+    def get_leaderboard(self) -> List[Tuple[str, str, int]]:
         """
-        Get list of all competitors from the leaderboard.
+        Get list of all competitors from the leaderboard with their current ranks.
         
         Returns:
-            List of tuples (public_id, name)
+            List of tuples (public_id, name, rank)
         """
-        # TODO: Implement leaderboard scraping
-        # For now, return empty list - you'll need to add the leaderboard URL
-        return []
+        leaderboard_url = f"https://www.marketwatch.com/games/{self.game_uri}/rankings"
+        
+        try:
+            response = requests.get(leaderboard_url, headers=self.html_headers, timeout=30)
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            competitors = []
+            
+            # Look for the leaderboard table
+            tables = soup.find_all('table', {'class': ['leaderboard', 'ranking', 'table--primary']})
+            
+            for table in tables:
+                rows = table.find_all('tr')
+                
+                for row in rows[1:]:  # Skip header
+                    cells = row.find_all(['td', 'th'])
+                    if len(cells) >= 2:  # Need at least rank and name
+                        # Try to find the portfolio link
+                        import re
+                        link = row.find('a', href=re.compile(r'/portfolio\?pub='))
+                        if link:
+                            # Extract public ID from URL
+                            href = link.get('href', '')
+                            match = re.search(r'pub=([^&]+)', href)
+                            if match:
+                                public_id = match.group(1)
+                                name = link.get_text(strip=True)
+                                
+                                # Get rank (usually first cell)
+                                rank_text = cells[0].get_text(strip=True)
+                                try:
+                                    rank = int(rank_text)
+                                except ValueError:
+                                    rank = 0
+                                
+                                competitors.append((public_id, name, rank))
+            
+            # If no table found, try alternative structure
+            if not competitors:
+                # Look for player cards or list items
+                import re
+                player_links = soup.find_all('a', href=re.compile(r'/portfolio\?pub='))
+                for i, link in enumerate(player_links, 1):
+                    href = link.get('href', '')
+                    match = re.search(r'pub=([^&]+)', href)
+                    if match:
+                        public_id = match.group(1)
+                        name = link.get_text(strip=True)
+                        competitors.append((public_id, name, i))
+            
+            return competitors
+            
+        except requests.RequestException as e:
+            print(f"Error fetching leaderboard: {e}")
+            return []
     
     def get_competitor_name(self, soup: BeautifulSoup) -> str:
         """Extract competitor name from portfolio page."""
@@ -256,12 +311,13 @@ class CompetitionScraper:
         
         return transactions
     
-    def scrape_competitor(self, public_id: str, name_map: Dict[str, str] = None) -> Optional[Competitor]:
+    def scrape_competitor(self, public_id: str, current_rank: int, name_map: Dict[str, str] = None) -> Optional[Competitor]:
         """
         Scrape all data for a single competitor.
         
         Args:
             public_id: The public ID for the competitor
+            current_rank: The current rank from the leaderboard
             name_map: Dictionary mapping public_id to name (from leaderboard)
             
         Returns:
@@ -316,11 +372,11 @@ class CompetitionScraper:
                 name = "Unknown"
                 transactions = []
         
-        # Create Competitor object
+        # Create Competitor object with current rank from leaderboard
         competitor = Competitor(
             public_id=public_id,
             name=name,
-            rank=latest.get('r', 0),
+            rank=current_rank,  # Use the current rank from leaderboard
             portfolio_value=latest.get('w', 0.0),
             return_percentage=latest.get('p', 0.0),
             return_dollars=latest.get('g', 0.0),
@@ -330,12 +386,12 @@ class CompetitionScraper:
         
         return competitor
     
-    def scrape_all_competitors(self, public_ids: List[str], name_map: Dict[str, str] = None, delay: float = 1.0) -> List[Competitor]:
+    def scrape_all_competitors(self, competitors_data: List[Tuple[str, int]], name_map: Dict[str, str] = None, delay: float = 1.0) -> List[Competitor]:
         """
         Scrape data for all competitors.
         
         Args:
-            public_ids: List of public IDs to scrape
+            competitors_data: List of tuples (public_id, rank) to scrape
             name_map: Dictionary mapping public_id to name (from leaderboard)
             delay: Delay between requests in seconds
             
@@ -343,12 +399,12 @@ class CompetitionScraper:
             List of Competitor objects
         """
         competitors = []
-        total = len(public_ids)
+        total = len(competitors_data)
         
-        for i, public_id in enumerate(public_ids, 1):
+        for i, (public_id, rank) in enumerate(competitors_data, 1):
             print(f"Scraping competitor {i}/{total}: {public_id}")
             
-            competitor = self.scrape_competitor(public_id, name_map)
+            competitor = self.scrape_competitor(public_id, rank, name_map)
             if competitor:
                 competitors.append(competitor)
                 print(f"  ✓ {competitor.name} - Rank #{competitor.rank} - ${competitor.portfolio_value:,.2f}")
@@ -435,22 +491,51 @@ def main():
     # Create scraper
     scraper = CompetitionScraper(game_uri, auth_cookies)
     
-    # Load competitor IDs from leaderboard data
-    try:
-        with open('leaderboard.json', 'r') as f:
-            leaderboard_data = json.load(f)
-            competitor_ids = [entry['public_id'] for entry in leaderboard_data['competitors']]
-            # Create name mapping
-            name_map = {entry['public_id']: entry['name'] for entry in leaderboard_data['competitors']}
-            print(f"Loaded {len(competitor_ids)} competitor IDs from leaderboard")
-    except FileNotFoundError:
-        print("Leaderboard data not found, using test ID only")
-        competitor_ids = ["-Ct8JFv9TYip"]  # Fallback to test ID
-        name_map = {}
+    # Hardcoded name mapping (as fallback - IDs and names won't change)
+    HARDCODED_NAME_MAP = {
+        "-Ct8JFv9TYip": "cj deslongchamps",
+        "_8Wq2c1c3_KU": "Sam Klein",
+        "PC71jGgKlLH-": "Will Hemauer",
+        "DZIwD2ECcFRC": "Sebastian Babu",
+        "HRBmKqN6Syly": "Ryan Carew",
+        "BB-z-hSCXbOT": "Ethan Houseworth",
+        "4uvjV2dXQ4SZ": "Jack DePrey",
+        "WArCf7i9ryyb": "Luke Sagone",
+        "eHQgXe9W7f8M": "Steve Perkins",
+        "iIDZxw5xNBMY": "Lily Valimont",
+        "XArvdHeUXb1q": "Griffin Fanger",
+        "9BaDE7wJmTD2": "Milla MacLeod",
+        "zvZv24UsJIFb": "Eileen Carey",
+        "LXCJkeLdPbuA": "Caroline Gundersen",
+        "lzmy429KW9qb": "Jack Pinsky",
+        "HmJ0d8Dzu6nT": "Leah Wong",
+        "eDoajzvdSnYh": "Katie Perritt",
+        "lSznByCwYnaw": "Sam LoCoco",
+        "3zPM3BlrtN6C": "Shega Case"
+    }
     
-    # Scrape all competitors
-    print("Scraping competition data...")
-    competitors = scraper.scrape_all_competitors(competitor_ids, name_map)
+    # Step 1: Fetch current leaderboard with live rankings
+    print("Fetching current leaderboard...")
+    leaderboard_data = scraper.get_leaderboard()
+    
+    if leaderboard_data:
+        print(f"Found {len(leaderboard_data)} competitors on leaderboard")
+        # Build competitor data with current ranks
+        competitors_to_scrape = [(pid, rank) for pid, name, rank in leaderboard_data]
+        # Update name map with any new names from leaderboard
+        name_map = HARDCODED_NAME_MAP.copy()
+        for pid, name, rank in leaderboard_data:
+            if pid not in name_map:
+                name_map[pid] = name
+    else:
+        print("Failed to fetch leaderboard, using hardcoded data")
+        # Fallback to hardcoded data with assumed ranks
+        competitors_to_scrape = [(pid, i+1) for i, pid in enumerate(HARDCODED_NAME_MAP.keys())]
+        name_map = HARDCODED_NAME_MAP
+    
+    # Step 2: Scrape all competitors with their current ranks
+    print("\nScraping competition data...")
+    competitors = scraper.scrape_all_competitors(competitors_to_scrape, name_map)
     
     # Create activity feed
     print("\nCreating activity feed...")
@@ -466,16 +551,74 @@ def main():
         print(f"  {activity['timestamp']} - {activity['player_name']} (Rank #{activity['player_rank']}) "
               f"{activity['action']} {activity['amount']:,} {activity['symbol']} @ {activity['price']}")
     
-    # Save data
-    with open('competition_data.json', 'w') as f:
+    # Initialize Firebase and push data
+    try:
+        # Initialize Firebase if not already initialized
+        if not firebase_admin._apps:
+            # Try to find firebase-credentials.json in script directory or parent
+            import os
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            cred_paths = [
+                os.path.join(script_dir, 'firebase-credentials.json'),
+                os.path.join(script_dir, '..', 'firebase-credentials.json'),
+                '/Users/ethanhouseworth/Documents/baird/marketwatch-activity-feed/firebase-credentials.json'
+            ]
+            
+            cred_file = None
+            for path in cred_paths:
+                if os.path.exists(path):
+                    cred_file = path
+                    break
+            
+            if cred_file:
+                cred = credentials.Certificate(cred_file)
+                firebase_admin.initialize_app(cred, {
+                    'databaseURL': 'https://martketwatch-activity-feed-default-rtdb.firebaseio.com'
+                })
+                print(f"\nUsing Firebase credentials from: {cred_file}")
+            else:
+                print("\nWARNING: firebase-credentials.json not found. Skipping Firebase push.")
+                print("Please ensure firebase-credentials.json is in the script directory.")
+        
+        # Prepare data with clear last_refreshed timestamp
+        now = datetime.now()
         data = {
             'competition': game_uri,
-            'scraped_at': datetime.now().isoformat(),
+            'last_refreshed': now.isoformat(),
+            'last_refreshed_formatted': now.strftime('%B %d, %Y at %I:%M %p'),
             'competitors': [c.to_dict() for c in competitors],
-            'activity_feed': feed
+            'activity_feed': feed,
+            'total_activities': len(feed),
+            'total_competitors': len(competitors)
         }
-        json.dump(data, f, indent=2)
-    print("\nData saved to competition_data.json")
+        
+        # Push to Firebase if initialized
+        if firebase_admin._apps:
+            ref = db.reference('latest_data')
+            ref.set(data)
+            print("Data pushed to Firebase!")
+        
+        # Always save locally as backup
+        with open('competition_data.json', 'w') as f:
+            json.dump(data, f, indent=2)
+        print("Data saved to competition_data.json")
+        
+    except Exception as e:
+        print(f"\nError with Firebase: {e}")
+        # Still save locally even if Firebase fails
+        now = datetime.now()
+        data = {
+            'competition': game_uri,
+            'last_refreshed': now.isoformat(),
+            'last_refreshed_formatted': now.strftime('%B %d, %Y at %I:%M %p'),
+            'competitors': [c.to_dict() for c in competitors],
+            'activity_feed': feed,
+            'total_activities': len(feed),
+            'total_competitors': len(competitors)
+        }
+        with open('competition_data.json', 'w') as f:
+            json.dump(data, f, indent=2)
+        print("Data saved locally to competition_data.json")
 
 
 if __name__ == "__main__":

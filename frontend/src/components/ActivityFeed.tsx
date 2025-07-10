@@ -21,7 +21,12 @@ const ActivityFeed: React.FC = () => {
     const unsubscribe = subscribeToLatestData((competitionData) => {
       if (competitionData) {
         setData(competitionData);
-        setLastUpdated(new Date());
+        // Use the last_refreshed timestamp from Firebase data
+        if (competitionData.last_refreshed) {
+          setLastUpdated(new Date(competitionData.last_refreshed));
+        } else {
+          setLastUpdated(new Date());
+        }
         setError(null);
       } else {
         setError('No data available. Waiting for next update...');
@@ -145,7 +150,7 @@ const ActivityFeed: React.FC = () => {
         {lastUpdated && (
           <div className="last-updated">
             <Clock className="last-updated-icon" />
-            <span>Last updated: {lastUpdated.toLocaleTimeString()}</span>
+            <span>Last updated: {data?.last_refreshed_formatted || lastUpdated.toLocaleString()}</span>
           </div>
         )}
       </div>

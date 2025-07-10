@@ -46,6 +46,15 @@ test_*.py
 debug_*.py
 *.log
 
+# Firebase
+firebase-credentials.json
+firebase-creds.json
+firebase-adminsdk-*.json
+
+# Node modules
+node_modules/
+functions/node_modules/
+
 # Frontend
 frontend/node_modules/
 frontend/build/
