@@ -166,7 +166,7 @@ const ActivityFeed: React.FC = () => {
             <div className="table-cell">Time</div>
           </div>
           
-          {data?.activity_feed.map((activity, index) => (
+          {data?.activity_feed?.map((activity, index) => (
             <div key={index} className="table-row">
               <div className="table-cell rank-cell">
                 <span className={`rank-bubble rank-${activity.player_rank}`}>
@@ -205,7 +205,7 @@ const ActivityFeed: React.FC = () => {
             </div>
           ))}
           
-          {!data?.activity_feed.length && (
+          {!data?.activity_feed?.length && (
             <div className="no-activity">
               <Activity className="no-activity-icon" />
               <p>No recent activity</p>
