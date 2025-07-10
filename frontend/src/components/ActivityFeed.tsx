@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Activity, TrendingUp, TrendingDown, Clock, Moon, Sun, Trophy, X } from 'lucide-react';
 import { CompetitionData } from '../types';
+import { subscribeToLatestData } from '../firebase';
 
 const ActivityFeed: React.FC = () => {
   const [data, setData] = useState<CompetitionData | null>(null);
@@ -13,39 +14,23 @@ const ActivityFeed: React.FC = () => {
   });
   const [showLeaderboard, setShowLeaderboard] = useState(false);
 
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      
-      // Fetch fresh data from Netlify function
-      const functionResponse = await fetch('/.netlify/functions/update-data');
-      if (!functionResponse.ok) {
-        throw new Error('Failed to fetch data from server');
-      }
-      
-      const result = await functionResponse.json();
-      if (!result.success || !result.data) {
-        throw new Error('Invalid data format received');
-      }
-      
-      setData(result.data);
-      setLastUpdated(new Date());
-    } catch (err) {
-      console.error('Error fetching data:', err);
-      setError('Failed to load competition data. Please try refreshing the page.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
-    fetchData();
+    setLoading(true);
     
-    // Auto-refresh every 10 minutes
-    const interval = setInterval(fetchData, 10 * 60 * 1000);
+    // Subscribe to Firebase real-time updates
+    const unsubscribe = subscribeToLatestData((competitionData) => {
+      if (competitionData) {
+        setData(competitionData);
+        setLastUpdated(new Date());
+        setError(null);
+      } else {
+        setError('No data available. Waiting for next update...');
+      }
+      setLoading(false);
+    });
     
-    return () => clearInterval(interval);
+    // Cleanup subscription on unmount
+    return () => unsubscribe();
   }, []);
 
   // Update body class for dark mode and save to localStorage
