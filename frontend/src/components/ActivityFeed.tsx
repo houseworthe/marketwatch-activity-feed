@@ -18,35 +18,22 @@ const ActivityFeed: React.FC = () => {
       setLoading(true);
       setError(null);
       
-      // Try to fetch fresh data from Netlify function first
-      let competitionData: CompetitionData | null = null;
-      
-      try {
-        const functionResponse = await fetch('/.netlify/functions/update-data');
-        if (functionResponse.ok) {
-          const result = await functionResponse.json();
-          if (result.success && result.data) {
-            competitionData = result.data;
-          }
-        }
-      } catch (functionError) {
-        console.log('Netlify function not available, falling back to static file');
+      // Fetch fresh data from Netlify function
+      const functionResponse = await fetch('/.netlify/functions/update-data');
+      if (!functionResponse.ok) {
+        throw new Error('Failed to fetch data from server');
       }
       
-      // Fallback to static file if function fails
-      if (!competitionData) {
-        const response = await fetch('/competition_data.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        competitionData = await response.json();
+      const result = await functionResponse.json();
+      if (!result.success || !result.data) {
+        throw new Error('Invalid data format received');
       }
       
-      setData(competitionData);
+      setData(result.data);
       setLastUpdated(new Date());
     } catch (err) {
       console.error('Error fetching data:', err);
-      setError('Failed to load competition data');
+      setError('Failed to load competition data. Please try refreshing the page.');
     } finally {
       setLoading(false);
     }
