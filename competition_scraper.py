@@ -256,12 +256,13 @@ class CompetitionScraper:
         
         return transactions
     
-    def scrape_competitor(self, public_id: str) -> Optional[Competitor]:
+    def scrape_competitor(self, public_id: str, name_map: Dict[str, str] = None) -> Optional[Competitor]:
         """
         Scrape all data for a single competitor.
         
         Args:
             public_id: The public ID for the competitor
+            name_map: Dictionary mapping public_id to name (from leaderboard)
             
         Returns:
             Competitor object or None if error
@@ -278,23 +279,42 @@ class CompetitionScraper:
         
         latest = values[-1]  # Most recent data
         
-        # Get HTML page for transactions and name
-        portfolio_url = f"https://www.marketwatch.com/games/{self.game_uri}/portfolio?pub={public_id}"
-        try:
-            response = requests.get(portfolio_url, headers=self.html_headers)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.content, 'html.parser')
-            
-            # Get competitor name
-            name = self.get_competitor_name(soup)
-            
-            # Get transactions
-            transactions = self.parse_transactions(soup)
-            
-        except requests.RequestException as e:
-            print(f"Error fetching HTML for {public_id}: {e}")
-            name = "Unknown"
+        # Get name from name_map if available, otherwise try to scrape
+        if name_map and public_id in name_map:
+            name = name_map[public_id]
             transactions = []
+            
+            # Still get HTML page for transactions
+            portfolio_url = f"https://www.marketwatch.com/games/{self.game_uri}/portfolio?pub={public_id}"
+            try:
+                response = requests.get(portfolio_url, headers=self.html_headers)
+                response.raise_for_status()
+                soup = BeautifulSoup(response.content, 'html.parser')
+                
+                # Get transactions
+                transactions = self.parse_transactions(soup)
+                
+            except requests.RequestException as e:
+                print(f"Error fetching HTML for {public_id}: {e}")
+                transactions = []
+        else:
+            # Fallback to HTML scraping for name
+            portfolio_url = f"https://www.marketwatch.com/games/{self.game_uri}/portfolio?pub={public_id}"
+            try:
+                response = requests.get(portfolio_url, headers=self.html_headers)
+                response.raise_for_status()
+                soup = BeautifulSoup(response.content, 'html.parser')
+                
+                # Get competitor name
+                name = self.get_competitor_name(soup)
+                
+                # Get transactions
+                transactions = self.parse_transactions(soup)
+                
+            except requests.RequestException as e:
+                print(f"Error fetching HTML for {public_id}: {e}")
+                name = "Unknown"
+                transactions = []
         
         # Create Competitor object
         competitor = Competitor(
@@ -310,12 +330,13 @@ class CompetitionScraper:
         
         return competitor
     
-    def scrape_all_competitors(self, public_ids: List[str], delay: float = 1.0) -> List[Competitor]:
+    def scrape_all_competitors(self, public_ids: List[str], name_map: Dict[str, str] = None, delay: float = 1.0) -> List[Competitor]:
         """
         Scrape data for all competitors.
         
         Args:
             public_ids: List of public IDs to scrape
+            name_map: Dictionary mapping public_id to name (from leaderboard)
             delay: Delay between requests in seconds
             
         Returns:
@@ -327,7 +348,7 @@ class CompetitionScraper:
         for i, public_id in enumerate(public_ids, 1):
             print(f"Scraping competitor {i}/{total}: {public_id}")
             
-            competitor = self.scrape_competitor(public_id)
+            competitor = self.scrape_competitor(public_id, name_map)
             if competitor:
                 competitors.append(competitor)
                 print(f"  ✓ {competitor.name} - Rank #{competitor.rank} - ${competitor.portfolio_value:,.2f}")
@@ -414,13 +435,22 @@ def main():
     # Create scraper
     scraper = CompetitionScraper(game_uri, auth_cookies)
     
-    # For testing, let's just scrape your portfolio
-    # In production, you'd get this list from the leaderboard
-    test_public_ids = ["-Ct8JFv9TYip"]  # Your public ID
+    # Load competitor IDs from leaderboard data
+    try:
+        with open('leaderboard.json', 'r') as f:
+            leaderboard_data = json.load(f)
+            competitor_ids = [entry['public_id'] for entry in leaderboard_data['competitors']]
+            # Create name mapping
+            name_map = {entry['public_id']: entry['name'] for entry in leaderboard_data['competitors']}
+            print(f"Loaded {len(competitor_ids)} competitor IDs from leaderboard")
+    except FileNotFoundError:
+        print("Leaderboard data not found, using test ID only")
+        competitor_ids = ["-Ct8JFv9TYip"]  # Fallback to test ID
+        name_map = {}
     
     # Scrape all competitors
     print("Scraping competition data...")
-    competitors = scraper.scrape_all_competitors(test_public_ids)
+    competitors = scraper.scrape_all_competitors(competitor_ids, name_map)
     
     # Create activity feed
     print("\nCreating activity feed...")

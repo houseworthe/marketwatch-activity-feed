@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, TrendingUp, TrendingDown, Clock, Moon, Sun } from 'lucide-react';
+import { Activity, TrendingUp, TrendingDown, Clock, Moon, Sun, Trophy, X } from 'lucide-react';
 import { CompetitionData } from '../types';
 
 const ActivityFeed: React.FC = () => {
@@ -8,6 +8,7 @@ const ActivityFeed: React.FC = () => {
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
 
   const fetchData = async () => {
     try {
@@ -112,6 +113,17 @@ const ActivityFeed: React.FC = () => {
     }
   }, [isDarkMode]);
 
+  // Handle ESC key to close modal
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && showLeaderboard) {
+        setShowLeaderboard(false);
+      }
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [showLeaderboard]);
+
   const getActionIcon = (action: string) => {
     switch (action.toLowerCase()) {
       case 'buy':
@@ -178,14 +190,26 @@ const ActivityFeed: React.FC = () => {
             <p>Real-time activity feed</p>
           </div>
           
-          {/* Theme Toggle */}
-          <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className="theme-toggle"
-            aria-label="Toggle theme"
-          >
-            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
+          <div className="header-buttons">
+            {/* Leaderboard Button */}
+            <button
+              onClick={() => setShowLeaderboard(true)}
+              className="leaderboard-button"
+              aria-label="Show leaderboard"
+            >
+              <Trophy size={20} />
+              <span>Leaderboard</span>
+            </button>
+            
+            {/* Theme Toggle */}
+            <button
+              onClick={() => setIsDarkMode(!isDarkMode)}
+              className="theme-toggle"
+              aria-label="Toggle theme"
+            >
+              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+          </div>
         </div>
         
         {lastUpdated && (
@@ -265,6 +289,66 @@ const ActivityFeed: React.FC = () => {
           <p className="error-text">
             {error} - Showing demo data for development
           </p>
+        </div>
+      )}
+
+      {/* Leaderboard Modal */}
+      {showLeaderboard && (
+        <div 
+          className="modal-overlay"
+          onClick={() => setShowLeaderboard(false)}
+        >
+          <div 
+            className="modal-content leaderboard-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="modal-header">
+              <h2>Competition Leaderboard</h2>
+              <button
+                onClick={() => setShowLeaderboard(false)}
+                className="modal-close"
+                aria-label="Close modal"
+              >
+                <X size={24} />
+              </button>
+            </div>
+            
+            <div className="modal-body">
+              <div className="leaderboard-table">
+                <div className="leaderboard-header">
+                  <div className="leaderboard-cell rank-col">Rank</div>
+                  <div className="leaderboard-cell name-col">Player</div>
+                  <div className="leaderboard-cell value-col">Portfolio Value</div>
+                  <div className="leaderboard-cell return-col">Return %</div>
+                  <div className="leaderboard-cell return-col">Return $</div>
+                </div>
+                
+                {data?.competitors
+                  .sort((a, b) => a.rank - b.rank)
+                  .map((competitor) => (
+                    <div key={competitor.public_id} className="leaderboard-row">
+                      <div className="leaderboard-cell rank-col">
+                        <span className={`rank-bubble rank-${competitor.rank}`}>
+                          {competitor.rank}
+                        </span>
+                      </div>
+                      <div className="leaderboard-cell name-col">
+                        {competitor.name}
+                      </div>
+                      <div className="leaderboard-cell value-col">
+                        {formatCurrency(competitor.portfolio_value)}
+                      </div>
+                      <div className={`leaderboard-cell return-col ${competitor.return_percentage >= 0 ? 'positive' : 'negative'}`}>
+                        {competitor.return_percentage >= 0 ? '+' : ''}{competitor.return_percentage.toFixed(2)}%
+                      </div>
+                      <div className={`leaderboard-cell return-col ${competitor.return_dollars >= 0 ? 'positive' : 'negative'}`}>
+                        {competitor.return_dollars >= 0 ? '+' : ''}{formatCurrency(Math.abs(competitor.return_dollars))}
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>

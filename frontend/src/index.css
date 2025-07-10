@@ -377,6 +377,183 @@ code {
   color: #d1d5db;
 }
 
+/* Header Buttons */
+.header-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.leaderboard-button {
+  background: none;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.leaderboard-button:hover {
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.leaderboard-modal {
+  width: 800px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #6b7280;
+  transition: color 0.2s ease;
+  border-radius: 6px;
+}
+
+.modal-close:hover {
+  color: #111827;
+  background-color: #f3f4f6;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  max-height: calc(90vh - 100px);
+}
+
+/* Leaderboard Table */
+.leaderboard-table {
+  width: 100%;
+}
+
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 150px 120px 150px;
+  padding: 0.75rem 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 150px 120px 150px;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+.leaderboard-row:hover {
+  background-color: #f9fafb;
+}
+
+.leaderboard-row:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-cell {
+  display: flex;
+  align-items: center;
+}
+
+.rank-col {
+  justify-content: center;
+}
+
+.name-col {
+  font-weight: 500;
+  color: #111827;
+}
+
+.value-col {
+  text-align: right;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+.return-col {
+  text-align: right;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+.return-col.positive {
+  color: #10b981;
+}
+
+.return-col.negative {
+  color: #ef4444;
+}
+
 /* Dark Mode Styles */
 .container.dark {
   color: #f9fafb;
@@ -499,6 +676,66 @@ body.dark {
   color: #6b7280;
 }
 
+/* Dark Mode - Header Buttons */
+.dark .leaderboard-button {
+  border-color: #374151;
+  color: #9ca3af;
+}
+
+.dark .leaderboard-button:hover {
+  border-color: #6b7280;
+  color: #f9fafb;
+}
+
+/* Dark Mode - Modal */
+.dark .modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark .modal-content {
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+.dark .modal-header {
+  border-bottom: 1px solid #374151;
+}
+
+.dark .modal-header h2 {
+  color: #f9fafb;
+}
+
+.dark .modal-close {
+  color: #9ca3af;
+}
+
+.dark .modal-close:hover {
+  color: #f9fafb;
+  background-color: #374151;
+}
+
+/* Dark Mode - Leaderboard Table */
+.dark .leaderboard-header {
+  color: #d1d5db;
+  border-bottom: 2px solid #374151;
+}
+
+.dark .leaderboard-row {
+  border-bottom: 1px solid #374151;
+}
+
+.dark .leaderboard-row:hover {
+  background-color: #374151;
+}
+
+.dark .name-col {
+  color: #f9fafb;
+}
+
+.dark .value-col {
+  color: #f9fafb;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
@@ -526,5 +763,54 @@ body.dark {
   .activity-icon {
     width: 0.875rem;
     height: 0.875rem;
+  }
+  
+  /* Mobile Modal Styles */
+  .modal-content {
+    margin: 1rem;
+    max-width: calc(100vw - 2rem);
+  }
+  
+  .leaderboard-modal {
+    width: 100%;
+  }
+  
+  .modal-header {
+    padding: 1rem;
+  }
+  
+  .modal-header h2 {
+    font-size: 1.25rem;
+  }
+  
+  .modal-body {
+    padding: 1rem;
+  }
+  
+  .leaderboard-header,
+  .leaderboard-row {
+    grid-template-columns: 60px 1fr 100px;
+    font-size: 0.75rem;
+  }
+  
+  .leaderboard-header .return-col,
+  .leaderboard-row .return-col {
+    display: none;
+  }
+  
+  .leaderboard-cell {
+    padding: 0 0.25rem;
+  }
+  
+  .header-buttons {
+    gap: 0.5rem;
+  }
+  
+  .leaderboard-button span {
+    display: none;
+  }
+  
+  .leaderboard-button {
+    padding: 0.5rem;
   }
 }
