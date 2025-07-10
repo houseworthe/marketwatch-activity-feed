@@ -559,9 +559,10 @@ def main():
             import os
             script_dir = os.path.dirname(os.path.abspath(__file__))
             cred_paths = [
+                os.path.join(script_dir, 'firebase-creds.json'),
                 os.path.join(script_dir, 'firebase-credentials.json'),
                 os.path.join(script_dir, '..', 'firebase-credentials.json'),
-                '/Users/ethanhouseworth/Documents/baird/marketwatch-activity-feed/firebase-credentials.json'
+                '/Users/ethanhouseworth/Documents/baird/marketwatch-activity-feed/firebase-creds.json'
             ]
             
             cred_file = None

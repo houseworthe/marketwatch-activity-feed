@@ -32,7 +32,11 @@ export interface ActivityFeedItem {
 
 export interface CompetitionData {
   competition: string;
-  scraped_at: string;
+  scraped_at?: string;
+  last_refreshed?: string;
+  last_refreshed_formatted?: string;
   competitors: Competitor[];
   activity_feed: ActivityFeedItem[];
+  total_activities?: number;
+  total_competitors?: number;
 }
