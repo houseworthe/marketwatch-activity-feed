@@ -7,7 +7,10 @@ const ActivityFeed: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('isDarkMode');
+    return saved ? JSON.parse(saved) : false;
+  });
   const [showLeaderboard, setShowLeaderboard] = useState(false);
 
   const fetchData = async () => {
@@ -104,13 +107,14 @@ const ActivityFeed: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Update body class for dark mode
+  // Update body class for dark mode and save to localStorage
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark');
     } else {
       document.body.classList.remove('dark');
     }
+    localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
   // Handle ESC key to close modal
