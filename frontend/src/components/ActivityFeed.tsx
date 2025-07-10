@@ -252,8 +252,8 @@ const ActivityFeed: React.FC = () => {
                 </div>
                 
                 {data?.competitors
-                  .sort((a, b) => a.rank - b.rank)
-                  .map((competitor) => (
+                  ?.sort((a, b) => a.rank - b.rank)
+                  ?.map((competitor) => (
                     <div key={competitor.public_id} className="leaderboard-row">
                       <div className="leaderboard-cell rank-col">
                         <span className={`rank-bubble rank-${competitor.rank}`}>
@@ -274,6 +274,13 @@ const ActivityFeed: React.FC = () => {
                       </div>
                     </div>
                   ))}
+                
+                {!data?.competitors?.length && (
+                  <div className="no-activity">
+                    <Trophy className="no-activity-icon" />
+                    <p>No competitors data available</p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
