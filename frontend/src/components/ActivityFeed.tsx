@@ -214,13 +214,6 @@ const ActivityFeed: React.FC = () => {
         </div>
       </div>
 
-      {error && (
-        <div className="error-banner">
-          <p className="error-text">
-            {error} - Showing demo data for development
-          </p>
-        </div>
-      )}
 
       {/* Leaderboard Modal */}
       {showLeaderboard && (
