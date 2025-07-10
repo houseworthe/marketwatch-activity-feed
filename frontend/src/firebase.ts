@@ -20,9 +20,11 @@ const database = getDatabase(app);
 // Subscribe to latest data
 export const subscribeToLatestData = (callback: (data: CompetitionData | null) => void) => {
   const dataRef = ref(database, 'latest_data');
+  console.log('Subscribing to Firebase path: latest_data');
   
   return onValue(dataRef, (snapshot) => {
     const data = snapshot.val();
+    console.log('Firebase data received:', data);
     callback(data as CompetitionData);
   }, (error) => {
     console.error('Firebase read error:', error);
