@@ -57,6 +57,7 @@ async function getPortfolioData(publicId) {
     headers: {
       'accept': 'application/json',
       'accept-language': 'en-US,en;q=0.9',
+      'cookie': AUTH_COOKIES,
       'dnt': '1',
       'origin': 'https://www.marketwatch.com',
       'referer': `https://www.marketwatch.com/games/${GAME_URI}`,
