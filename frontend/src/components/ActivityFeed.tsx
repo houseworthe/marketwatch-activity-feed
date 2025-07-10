@@ -47,68 +47,6 @@ const ActivityFeed: React.FC = () => {
     } catch (err) {
       console.error('Error fetching data:', err);
       setError('Failed to load competition data');
-      
-      // Use mock data for development
-      const mockData: CompetitionData = {
-        competition: 'baird-pwm-intern-stock-market-competition',
-        scraped_at: new Date().toISOString(),
-        competitors: [
-          {
-            public_id: '-Ct8JFv9TYip',
-            name: 'John Doe',
-            rank: 1,
-            portfolio_value: 1315450.18,
-            return_percentage: 31.55,
-            return_dollars: 315450.18,
-            transactions: [],
-            last_updated: new Date().toISOString(),
-          },
-          {
-            public_id: '-Xyz123ABC',
-            name: 'Jane Smith',
-            rank: 2,
-            portfolio_value: 1250000.00,
-            return_percentage: 25.00,
-            return_dollars: 250000.00,
-            transactions: [],
-            last_updated: new Date().toISOString(),
-          },
-        ],
-        activity_feed: [
-          {
-            timestamp: '7/9/25 10:45a ET',
-            player_name: 'John Doe',
-            player_rank: 1,
-            action: 'Buy',
-            symbol: 'TSLA',
-            amount: 1000,
-            price: '$245.67',
-            portfolio_value: 1315450.18,
-          },
-          {
-            timestamp: '7/9/25 10:30a ET',
-            player_name: 'Jane Smith',
-            player_rank: 2,
-            action: 'Sell',
-            symbol: 'AAPL',
-            amount: 500,
-            price: '$188.23',
-            portfolio_value: 1250000.00,
-          },
-          {
-            timestamp: '7/9/25 10:15a ET',
-            player_name: 'John Doe',
-            player_rank: 1,
-            action: 'Short',
-            symbol: 'PHH',
-            amount: 359328,
-            price: '$1.32',
-            portfolio_value: 1315450.18,
-          },
-        ],
-      };
-      setData(mockData);
-      setLastUpdated(new Date());
     } finally {
       setLoading(false);
     }
