@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Data Updater</title>
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <h1>Auto Data Updater</h1>
+    <p>This page automatically triggers data updates every 10 minutes.</p>
+    <p>Status: <span id="status">Starting...</span></p>
+    <p>Last Update: <span id="lastUpdate">Never</span></p>
+    <div id="log"></div>
+
+    <script>
+        let updateCount = 0;
+        
+        function log(message) {
+            const logDiv = document.getElementById('log');
+            const timestamp = new Date().toLocaleTimeString();
+            logDiv.innerHTML = `<div>[${timestamp}] ${message}</div>` + logDiv.innerHTML;
+            if (logDiv.children.length > 10) {
+                logDiv.removeChild(logDiv.lastChild);
+            }
+        }
+        
+        async function updateData() {
+            try {
+                document.getElementById('status').textContent = 'Updating...';
+                log('Starting data update...');
+                
+                const response = await fetch('/.netlify/functions/update-data', {
+                    method: 'POST'
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    updateCount++;
+                    document.getElementById('status').textContent = `Active (${updateCount} updates)`;
+                    document.getElementById('lastUpdate').textContent = new Date().toLocaleString();
+                    log(`✓ Update successful: ${result.message}`);
+                } else {
+                    document.getElementById('status').textContent = 'Error';
+                    log(`✗ Update failed: ${result.error}`);
+                }
+                
+            } catch (error) {
+                document.getElementById('status').textContent = 'Error';
+                log(`✗ Update failed: ${error.message}`);
+            }
+        }
+        
+        // Run immediately on load
+        updateData();
+        
+        // Then run every 10 minutes (600,000 milliseconds)
+        setInterval(updateData, 10 * 60 * 1000);
+        
+        log('Auto-updater started - will update every 10 minutes');
+    </script>
+</body>
+</html>

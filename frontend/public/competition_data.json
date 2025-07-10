@@ -1,6 +1,6 @@
 {
   "competition": "baird-pwm-intern-stock-market-competition",
-  "scraped_at": "2025-07-10T08:34:40.082652",
+  "scraped_at": "2025-07-10T08:45:09.102742",
   "competitors": [
     {
       "public_id": "-Ct8JFv9TYip",
@@ -101,7 +101,7 @@
           "status": "Canceled"
         }
       ],
-      "last_updated": "2025-07-10T08:34:10.861456"
+      "last_updated": "2025-07-10T08:44:39.776668"
     },
     {
       "public_id": "_8Wq2c1c3_KU",
@@ -202,7 +202,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:12.513438"
+      "last_updated": "2025-07-10T08:44:41.426870"
     },
     {
       "public_id": "PC71jGgKlLH-",
@@ -303,7 +303,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:14.127841"
+      "last_updated": "2025-07-10T08:44:43.039391"
     },
     {
       "public_id": "DZIwD2ECcFRC",
@@ -404,7 +404,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:15.738180"
+      "last_updated": "2025-07-10T08:44:44.676799"
     },
     {
       "public_id": "HRBmKqN6Syly",
@@ -505,7 +505,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:17.372168"
+      "last_updated": "2025-07-10T08:44:46.329313"
     },
     {
       "public_id": "BB-z-hSCXbOT",
@@ -606,7 +606,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:18.981022"
+      "last_updated": "2025-07-10T08:44:47.939936"
     },
     {
       "public_id": "4uvjV2dXQ4SZ",
@@ -707,7 +707,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:20.595447"
+      "last_updated": "2025-07-10T08:44:49.559177"
     },
     {
       "public_id": "WArCf7i9ryyb",
@@ -808,7 +808,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:22.187573"
+      "last_updated": "2025-07-10T08:44:51.164433"
     },
     {
       "public_id": "eHQgXe9W7f8M",
@@ -909,7 +909,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:23.788748"
+      "last_updated": "2025-07-10T08:44:52.770702"
     },
     {
       "public_id": "iIDZxw5xNBMY",
@@ -1010,7 +1010,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:25.416102"
+      "last_updated": "2025-07-10T08:44:54.401599"
     },
     {
       "public_id": "XArvdHeUXb1q",
@@ -1111,7 +1111,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:27.022482"
+      "last_updated": "2025-07-10T08:44:56.024738"
     },
     {
       "public_id": "9BaDE7wJmTD2",
@@ -1212,7 +1212,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:28.629424"
+      "last_updated": "2025-07-10T08:44:57.655587"
     },
     {
       "public_id": "zvZv24UsJIFb",
@@ -1277,7 +1277,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:30.261127"
+      "last_updated": "2025-07-10T08:44:59.259058"
     },
     {
       "public_id": "LXCJkeLdPbuA",
@@ -1342,7 +1342,7 @@
           "status": "Canceled"
         }
       ],
-      "last_updated": "2025-07-10T08:34:31.851898"
+      "last_updated": "2025-07-10T08:45:00.858804"
     },
     {
       "public_id": "lzmy429KW9qb",
@@ -1443,7 +1443,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:33.494645"
+      "last_updated": "2025-07-10T08:45:02.532092"
     },
     {
       "public_id": "HmJ0d8Dzu6nT",
@@ -1544,7 +1544,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:35.123093"
+      "last_updated": "2025-07-10T08:45:04.161073"
     },
     {
       "public_id": "eDoajzvdSnYh",
@@ -1645,7 +1645,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:36.773031"
+      "last_updated": "2025-07-10T08:45:05.795727"
     },
     {
       "public_id": "lSznByCwYnaw",
@@ -1746,7 +1746,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:38.386813"
+      "last_updated": "2025-07-10T08:45:07.423981"
     },
     {
       "public_id": "3zPM3BlrtN6C",
@@ -1847,7 +1847,7 @@
           "status": "Completed"
         }
       ],
-      "last_updated": "2025-07-10T08:34:40.079753"
+      "last_updated": "2025-07-10T08:45:09.099907"
     }
   ],
   "activity_feed": [
