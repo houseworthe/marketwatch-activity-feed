@@ -1,0 +1,3455 @@
+{
+  "competition": "baird-pwm-intern-stock-market-competition",
+  "scraped_at": "2025-07-09T16:04:22.485807",
+  "competitors": [
+    {
+      "public_id": "-Ct8JFv9TYip",
+      "name": "cj deslongchamps",
+      "rank": 2,
+      "portfolio_value": 1315450.1843,
+      "return_percentage": 31.54501843,
+      "return_dollars": 315450.1843,
+      "transactions": [
+        {
+          "symbol": "PHH",
+          "order_date": "7/9/25 10:45a ET",
+          "transaction_date": "7/9/25 10:45a ET",
+          "action": "Short",
+          "amount": 359328,
+          "price": "$1.32",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PHH",
+          "order_date": "7/9/25 9:34a ET",
+          "transaction_date": "7/9/25 9:34a ET",
+          "action": "Short",
+          "amount": 382707,
+          "price": "$1.98",
+          "status": "Completed"
+        },
+        {
+          "symbol": "DGXX",
+          "order_date": "7/8/25 2:21p ET",
+          "transaction_date": "",
+          "action": "BuyCanceled:",
+          "amount": 294268,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "DGXX",
+          "order_date": "7/7/25 9:36a ET",
+          "transaction_date": "7/7/25 9:36a ET",
+          "action": "Buy",
+          "amount": 81665,
+          "price": "$2.86",
+          "status": "Completed"
+        },
+        {
+          "symbol": "DGXX",
+          "order_date": "7/3/25 2:19p ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 104842,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 3:27p ET",
+          "transaction_date": "",
+          "action": "BuyCanceled:",
+          "amount": 624405,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 3:20p ET",
+          "transaction_date": "",
+          "action": "BuyCanceled:",
+          "amount": 624405,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 2:43p ET",
+          "transaction_date": "7/2/25 2:45p ET",
+          "action": "Sell",
+          "amount": 676652,
+          "price": "$1.47",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 2:42p ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 676652,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/1/25 9:39a ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 676652,
+          "price": "N/A",
+          "status": "Canceled"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:44.576999"
+    },
+    {
+      "public_id": "_8Wq2c1c3_KU",
+      "name": "Sam Klein",
+      "rank": 1,
+      "portfolio_value": 1618935.7194,
+      "return_percentage": 61.89357194,
+      "return_dollars": 618935.7194,
+      "transactions": [
+        {
+          "symbol": "BMNR",
+          "order_date": "7/9/25 11:41a ET",
+          "transaction_date": "7/9/25 11:41a ET",
+          "action": "Short",
+          "amount": 25990,
+          "price": "$60.36",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/9/25 11:40a ET",
+          "transaction_date": "7/9/25 11:40a ET",
+          "action": "Sell",
+          "amount": 22533,
+          "price": "$60.70",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/9/25 11:29a ET",
+          "transaction_date": "7/9/25 11:29a ET",
+          "action": "Buy",
+          "amount": 22533,
+          "price": "$62.12",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/9/25 11:22a ET",
+          "transaction_date": "",
+          "action": "ShortCanceled:",
+          "amount": 5020,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/9/25 11:18a ET",
+          "transaction_date": "",
+          "action": "ShortCanceled:",
+          "amount": 26390,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/3/25 11:09a ET",
+          "transaction_date": "7/3/25 11:17a ET",
+          "action": "Sell",
+          "amount": 9777,
+          "price": "$108.14",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MSTR",
+          "order_date": "7/3/25 10:42a ET",
+          "transaction_date": "7/3/25 10:42a ET",
+          "action": "Sell",
+          "amount": 1356,
+          "price": "$408.86",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/1/25 9:32a ET",
+          "transaction_date": "7/1/25 9:32a ET",
+          "action": "Buy",
+          "amount": 9777,
+          "price": "$52.00",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MSTR",
+          "order_date": "7/1/25 9:13a ET",
+          "transaction_date": "7/1/25 9:30a ET",
+          "action": "Sell",
+          "amount": 1302,
+          "price": "$395.50",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MSTR",
+          "order_date": "6/24/25 10:05a ET",
+          "transaction_date": "6/24/25 10:05a ET",
+          "action": "Buy",
+          "amount": 2658,
+          "price": "$375.92",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:46.213819"
+    },
+    {
+      "public_id": "PC71jGgKlLH-",
+      "name": "Will Hemauer",
+      "rank": 3,
+      "portfolio_value": 1236616.2400175272,
+      "return_percentage": 23.66162400175273,
+      "return_dollars": 236616.2400175273,
+      "transactions": [
+        {
+          "symbol": "WOLF",
+          "order_date": "7/9/25 3:00p ET",
+          "transaction_date": "7/9/25 3:00p ET",
+          "action": "Cover",
+          "amount": 197329,
+          "price": "$2.02",
+          "status": "Completed"
+        },
+        {
+          "symbol": "WOLF",
+          "order_date": "7/9/25 2:58p ET",
+          "transaction_date": "7/9/25 2:58p ET",
+          "action": "Short",
+          "amount": 197329,
+          "price": "$2.02",
+          "status": "Completed"
+        },
+        {
+          "symbol": "SY",
+          "order_date": "7/9/25 2:50p ET",
+          "transaction_date": "7/9/25 2:53p ET",
+          "action": "Sell",
+          "amount": 47994,
+          "price": "$4.25",
+          "status": "Completed"
+        },
+        {
+          "symbol": "WOLF",
+          "order_date": "7/9/25 2:49p ET",
+          "transaction_date": "7/9/25 2:49p ET",
+          "action": "Sell",
+          "amount": 14691,
+          "price": "$2.08",
+          "status": "Completed"
+        },
+        {
+          "symbol": "SY",
+          "order_date": "7/8/25 2:20p ET",
+          "transaction_date": "7/8/25 2:20p ET",
+          "action": "Buy",
+          "amount": 115998,
+          "price": "$4.20",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MSTR",
+          "order_date": "7/8/25 2:17p ET",
+          "transaction_date": "7/8/25 2:17p ET",
+          "action": "Sell",
+          "amount": 1173,
+          "price": "$399.04",
+          "status": "Completed"
+        },
+        {
+          "symbol": "WOLF",
+          "order_date": "7/8/25 12:07p ET",
+          "transaction_date": "7/8/25 12:07p ET",
+          "action": "Buy",
+          "amount": 137422,
+          "price": "$2.73",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MSTR",
+          "order_date": "7/8/25 12:03p ET",
+          "transaction_date": "7/8/25 12:03p ET",
+          "action": "Buy",
+          "amount": 1173,
+          "price": "$395.28",
+          "status": "Completed"
+        },
+        {
+          "symbol": "WOLF",
+          "order_date": "7/8/25 12:01p ET",
+          "transaction_date": "7/8/25 12:01p ET",
+          "action": "BuyCanceled:",
+          "amount": 407074,
+          "price": "$2.76",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "SY",
+          "order_date": "7/8/25 9:42a ET",
+          "transaction_date": "7/8/25 9:42a ET",
+          "action": "Buy",
+          "amount": 34466,
+          "price": "$4.42",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:48.160939"
+    },
+    {
+      "public_id": "DZIwD2ECcFRC",
+      "name": "Sebastian Babu",
+      "rank": 4,
+      "portfolio_value": 1183260.6033,
+      "return_percentage": 18.32606033,
+      "return_dollars": 183260.6033,
+      "transactions": [
+        {
+          "symbol": "BMNR",
+          "order_date": "7/9/25 11:31a ET",
+          "transaction_date": "7/9/25 11:31a ET",
+          "action": "Buy",
+          "amount": 230,
+          "price": "$64.22",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/9/25 10:27a ET",
+          "transaction_date": "7/9/25 10:27a ET",
+          "action": "Short",
+          "amount": 4404,
+          "price": "$5.93",
+          "status": "Completed"
+        },
+        {
+          "symbol": "XXII",
+          "order_date": "7/8/25 9:57a ET",
+          "transaction_date": "7/8/25 10:13a ET",
+          "action": "Short",
+          "amount": 16718,
+          "price": "$5.95",
+          "status": "Completed"
+        },
+        {
+          "symbol": "XXII",
+          "order_date": "7/8/25 9:49a ET",
+          "transaction_date": "7/8/25 9:51a ET",
+          "action": "ShortCanceled:",
+          "amount": 31981,
+          "price": "$6.01",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "XXII",
+          "order_date": "7/8/25 9:01a ET",
+          "transaction_date": "7/8/25 9:30a ET",
+          "action": "Short",
+          "amount": 26189,
+          "price": "$6.22",
+          "status": "Completed"
+        },
+        {
+          "symbol": "XXII",
+          "order_date": "7/7/25 2:42p ET",
+          "transaction_date": "7/7/25 2:57p ET",
+          "action": "ShortCanceled:",
+          "amount": 25120,
+          "price": "$6.41",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "SVRE",
+          "order_date": "7/7/25 2:42p ET",
+          "transaction_date": "7/7/25 2:42p ET",
+          "action": "Sell",
+          "amount": 28180,
+          "price": "$3.21",
+          "status": "Completed"
+        },
+        {
+          "symbol": "SVRE",
+          "order_date": "7/7/25 2:42p ET",
+          "transaction_date": "7/7/25 2:42p ET",
+          "action": "Cover",
+          "amount": 19580,
+          "price": "$3.20",
+          "status": "Completed"
+        },
+        {
+          "symbol": "XXII",
+          "order_date": "7/7/25 1:56p ET",
+          "transaction_date": "7/7/25 2:08p ET",
+          "action": "Short",
+          "amount": 16720,
+          "price": "$6.30",
+          "status": "Completed"
+        },
+        {
+          "symbol": "SVRE",
+          "order_date": "7/7/25 10:22a ET",
+          "transaction_date": "7/7/25 10:22a ET",
+          "action": "Buy",
+          "amount": 28180,
+          "price": "$2.64",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:49.828970"
+    },
+    {
+      "public_id": "HRBmKqN6Syly",
+      "name": "Ryan Carew",
+      "rank": 7,
+      "portfolio_value": 1050078.2349,
+      "return_percentage": 5.00782349,
+      "return_dollars": 50078.2349,
+      "transactions": [
+        {
+          "symbol": "TLIH",
+          "order_date": "7/9/25 3:43p ET",
+          "transaction_date": "7/9/25 3:43p ET",
+          "action": "Buy",
+          "amount": 17853,
+          "price": "$4.90",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MPU",
+          "order_date": "7/9/25 3:41p ET",
+          "transaction_date": "7/9/25 3:41p ET",
+          "action": "Sell",
+          "amount": 40490,
+          "price": "$2.21",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMGL",
+          "order_date": "7/9/25 2:12p ET",
+          "transaction_date": "7/9/25 2:12p ET",
+          "action": "Buy",
+          "amount": 18430,
+          "price": "$3.08",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMGL",
+          "order_date": "7/9/25 10:21a ET",
+          "transaction_date": "7/9/25 10:21a ET",
+          "action": "Buy",
+          "amount": 45598,
+          "price": "$3.09",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/9/25 10:17a ET",
+          "transaction_date": "7/9/25 10:17a ET",
+          "action": "Sell",
+          "amount": 25214,
+          "price": "$5.96",
+          "status": "Completed"
+        },
+        {
+          "symbol": "HIVE",
+          "order_date": "7/9/25 10:17a ET",
+          "transaction_date": "7/9/25 10:17a ET",
+          "action": "Sell",
+          "amount": 43909,
+          "price": "$2.15",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/8/25 3:54p ET",
+          "transaction_date": "7/8/25 4:00p ET",
+          "action": "Buy",
+          "amount": 23077,
+          "price": "$3.73",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/8/25 2:02p ET",
+          "transaction_date": "7/8/25 2:26p ET",
+          "action": "Sell",
+          "amount": 23432,
+          "price": "$4.00",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/8/25 11:18a ET",
+          "transaction_date": "7/8/25 11:19a ET",
+          "action": "Buy",
+          "amount": 42523,
+          "price": "$2.70",
+          "status": "Completed"
+        },
+        {
+          "symbol": "HIVE",
+          "order_date": "7/8/25 11:17a ET",
+          "transaction_date": "7/8/25 11:17a ET",
+          "action": "Sell",
+          "amount": 40420,
+          "price": "$2.29",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:51.516526"
+    },
+    {
+      "public_id": "BB-z-hSCXbOT",
+      "name": "Ethan Houseworth",
+      "rank": 8,
+      "portfolio_value": 1046778.6602,
+      "return_percentage": 4.67786602,
+      "return_dollars": 46778.6602,
+      "transactions": [
+        {
+          "symbol": "CDTX",
+          "order_date": "7/8/25 4:06p ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 1035,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "COIN",
+          "order_date": "7/8/25 9:48a ET",
+          "transaction_date": "7/8/25 9:48a ET",
+          "action": "Buy",
+          "amount": 140,
+          "price": "$357.37",
+          "status": "Completed"
+        },
+        {
+          "symbol": "COIN",
+          "order_date": "7/7/25 10:10a ET",
+          "transaction_date": "7/7/25 10:10a ET",
+          "action": "Buy",
+          "amount": 138,
+          "price": "$358.36",
+          "status": "Completed"
+        },
+        {
+          "symbol": "INOD",
+          "order_date": "7/7/25 9:56a ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 3049,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "DGNX",
+          "order_date": "7/7/25 9:54a ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 1,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "INOD",
+          "order_date": "7/7/25 9:54a ET",
+          "transaction_date": "7/7/25 9:54a ET",
+          "action": "Sell",
+          "amount": 3049,
+          "price": "$48.97",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PLUG",
+          "order_date": "7/7/25 9:52a ET",
+          "transaction_date": "7/7/25 9:52a ET",
+          "action": "Buy",
+          "amount": 141614,
+          "price": "$1.39",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CDTX",
+          "order_date": "7/7/25 9:49a ET",
+          "transaction_date": "7/7/25 9:50a ET",
+          "action": "Buy",
+          "amount": 4308,
+          "price": "$47.30",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BBAI",
+          "order_date": "7/7/25 9:46a ET",
+          "transaction_date": "7/7/25 9:46a ET",
+          "action": "Buy",
+          "amount": 40507,
+          "price": "$7.49",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TERN",
+          "order_date": "7/7/25 9:34a ET",
+          "transaction_date": "7/7/25 9:37a ET",
+          "action": "Sell",
+          "amount": 19076,
+          "price": "$4.30",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:53.776722"
+    },
+    {
+      "public_id": "4uvjV2dXQ4SZ",
+      "name": "Jack DePrey",
+      "rank": 5,
+      "portfolio_value": 1064441.9288,
+      "return_percentage": 6.44419288,
+      "return_dollars": 64441.9288,
+      "transactions": [
+        {
+          "symbol": "TSLQ",
+          "order_date": "6/27/25 9:29a ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 31147,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "TXG",
+          "order_date": "6/26/25 5:35p ET",
+          "transaction_date": "6/27/25 9:30a ET",
+          "action": "Sell",
+          "amount": 8,
+          "price": "$11.83",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TXG",
+          "order_date": "6/26/25 5:35p ET",
+          "transaction_date": "6/27/25 9:30a ET",
+          "action": "Cover",
+          "amount": 7369,
+          "price": "$11.83",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSLQ",
+          "order_date": "6/26/25 5:35p ET",
+          "transaction_date": "6/27/25 9:30a ET",
+          "action": "Sell",
+          "amount": 31147,
+          "price": "$17.55",
+          "status": "Completed"
+        },
+        {
+          "symbol": "NVDU",
+          "order_date": "6/26/25 12:02p ET",
+          "transaction_date": "6/26/25 12:02p ET",
+          "action": "Sell",
+          "amount": 2706,
+          "price": "$96.22",
+          "status": "Completed"
+        },
+        {
+          "symbol": "FAS",
+          "order_date": "6/26/25 12:01p ET",
+          "transaction_date": "6/26/25 12:02p ET",
+          "action": "Sell",
+          "amount": 606,
+          "price": "$162.49",
+          "status": "Completed"
+        },
+        {
+          "symbol": "DJT",
+          "order_date": "6/26/25 12:01p ET",
+          "transaction_date": "6/26/25 12:01p ET",
+          "action": "Sell",
+          "amount": 4150,
+          "price": "$17.40",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TXG",
+          "order_date": "6/26/25 12:01p ET",
+          "transaction_date": "6/26/25 12:01p ET",
+          "action": "Buy",
+          "amount": 8,
+          "price": "$11.79",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSLQ",
+          "order_date": "6/26/25 12:00p ET",
+          "transaction_date": "6/26/25 12:01p ET",
+          "action": "Buy",
+          "amount": 24697,
+          "price": "$17.10",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TQQQ",
+          "order_date": "6/26/25 12:00p ET",
+          "transaction_date": "6/26/25 12:00p ET",
+          "action": "Sell",
+          "amount": 5512,
+          "price": "$80.08",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:55.806557"
+    },
+    {
+      "public_id": "eHQgXe9W7f8M",
+      "name": "Steve Perkins",
+      "rank": 13,
+      "portfolio_value": 1038550.5257,
+      "return_percentage": 3.85505257,
+      "return_dollars": 38550.5257,
+      "transactions": [
+        {
+          "symbol": "VRNA",
+          "order_date": "7/9/25 11:36a ET",
+          "transaction_date": "7/9/25 11:36a ET",
+          "action": "Buy",
+          "amount": 999,
+          "price": "$104.81",
+          "status": "Completed"
+        },
+        {
+          "symbol": "RYTM",
+          "order_date": "7/9/25 10:49a ET",
+          "transaction_date": "7/9/25 10:49a ET",
+          "action": "Buy",
+          "amount": 2102,
+          "price": "$81.83",
+          "status": "Completed"
+        },
+        {
+          "symbol": "FRO",
+          "order_date": "7/8/25 8:55a ET",
+          "transaction_date": "7/8/25 9:30a ET",
+          "action": "Sell",
+          "amount": 6575,
+          "price": "$18.50",
+          "status": "Completed"
+        },
+        {
+          "symbol": "RIOT",
+          "order_date": "7/7/25 10:22a ET",
+          "transaction_date": "7/7/25 10:22a ET",
+          "action": "Sell",
+          "amount": 11104,
+          "price": "$11.24",
+          "status": "Completed"
+        },
+        {
+          "symbol": "FRO",
+          "order_date": "7/7/25 10:13a ET",
+          "transaction_date": "7/7/25 10:13a ET",
+          "action": "Buy",
+          "amount": 6575,
+          "price": "$18.46",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MGNI",
+          "order_date": "7/3/25 12:51p ET",
+          "transaction_date": "7/3/25 12:51p ET",
+          "action": "Sell",
+          "amount": 708,
+          "price": "$24.52",
+          "status": "Completed"
+        },
+        {
+          "symbol": "DDOG",
+          "order_date": "7/3/25 9:04a ET",
+          "transaction_date": "7/3/25 9:30a ET",
+          "action": "Buy",
+          "amount": 640,
+          "price": "$147.56",
+          "status": "Completed"
+        },
+        {
+          "symbol": "IREN",
+          "order_date": "7/3/25 8:29a ET",
+          "transaction_date": "7/3/25 9:30a ET",
+          "action": "Sell",
+          "amount": 8421,
+          "price": "$15.97",
+          "status": "Completed"
+        },
+        {
+          "symbol": "RIOT",
+          "order_date": "7/2/25 9:42a ET",
+          "transaction_date": "7/2/25 9:42a ET",
+          "action": "Buy",
+          "amount": 11104,
+          "price": "$11.83",
+          "status": "Completed"
+        },
+        {
+          "symbol": "META",
+          "order_date": "7/1/25 2:23p ET",
+          "transaction_date": "7/1/25 2:23p ET",
+          "action": "Cover",
+          "amount": 105,
+          "price": "$720.27",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:03:57.887853"
+    },
+    {
+      "public_id": "WArCf7i9ryyb",
+      "name": "Luke Sagone",
+      "rank": 11,
+      "portfolio_value": 1043374.572,
+      "return_percentage": 4.3374572,
+      "return_dollars": 43374.572,
+      "transactions": [
+        {
+          "symbol": "UBRL",
+          "order_date": "7/9/25 2:48p ET",
+          "transaction_date": "7/9/25 2:51p ET",
+          "action": "Buy",
+          "amount": 19025,
+          "price": "$35.45",
+          "status": "Completed"
+        },
+        {
+          "symbol": "UBRL",
+          "order_date": "7/9/25 2:16p ET",
+          "transaction_date": "7/9/25 2:23p ET",
+          "action": "BuyCanceled:",
+          "amount": 19617,
+          "price": "$35.58",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "UNH",
+          "order_date": "7/9/25 2:15p ET",
+          "transaction_date": "7/9/25 2:15p ET",
+          "action": "Sell",
+          "amount": 359,
+          "price": "$302.59",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MSFT",
+          "order_date": "7/9/25 2:15p ET",
+          "transaction_date": "7/9/25 2:15p ET",
+          "action": "Sell",
+          "amount": 206,
+          "price": "$502.21",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CAT",
+          "order_date": "7/9/25 2:14p ET",
+          "transaction_date": "7/9/25 2:15p ET",
+          "action": "Sell",
+          "amount": 690,
+          "price": "$403.14",
+          "status": "Completed"
+        },
+        {
+          "symbol": "XOM",
+          "order_date": "7/9/25 2:14p ET",
+          "transaction_date": "7/9/25 2:14p ET",
+          "action": "Sell",
+          "amount": 466,
+          "price": "$113.51",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CRM",
+          "order_date": "7/9/25 2:13p ET",
+          "transaction_date": "7/9/25 2:14p ET",
+          "action": "Sell",
+          "amount": 398,
+          "price": "$270.53",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CAT",
+          "order_date": "7/9/25 2:13p ET",
+          "transaction_date": "7/9/25 2:14p ET",
+          "action": "Buy",
+          "amount": 690,
+          "price": "$402.60",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CAT",
+          "order_date": "7/9/25 2:13p ET",
+          "transaction_date": "7/9/25 2:14p ET",
+          "action": "Sell",
+          "amount": 114,
+          "price": "$402.60",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BA",
+          "order_date": "7/9/25 2:13p ET",
+          "transaction_date": "7/9/25 2:13p ET",
+          "action": "Sell",
+          "amount": 1221,
+          "price": "$227.44",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:00.087747"
+    },
+    {
+      "public_id": "iIDZxw5xNBMY",
+      "name": "Lily Valimont",
+      "rank": 10,
+      "portfolio_value": 1043957.7257,
+      "return_percentage": 4.39577257,
+      "return_dollars": 43957.7257,
+      "transactions": [
+        {
+          "symbol": "KSS",
+          "order_date": "6/24/25 10:42a ET",
+          "transaction_date": "6/24/25 10:42a ET",
+          "action": "Buy",
+          "amount": 3,
+          "price": "$8.36",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CAMT",
+          "order_date": "6/24/25 10:38a ET",
+          "transaction_date": "6/24/25 10:39a ET",
+          "action": "Buy",
+          "amount": 149,
+          "price": "$78.37",
+          "status": "Completed"
+        },
+        {
+          "symbol": "DIS",
+          "order_date": "6/24/25 10:38a ET",
+          "transaction_date": "6/24/25 10:38a ET",
+          "action": "Sell",
+          "amount": 99,
+          "price": "$118.55",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MP",
+          "order_date": "6/24/25 10:35a ET",
+          "transaction_date": "6/24/25 10:35a ET",
+          "action": "Buy",
+          "amount": 1,
+          "price": "$35.74",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSLA",
+          "order_date": "6/24/25 10:34a ET",
+          "transaction_date": "6/24/25 10:34a ET",
+          "action": "Buy",
+          "amount": 10,
+          "price": "$342.47",
+          "status": "Completed"
+        },
+        {
+          "symbol": "LULU",
+          "order_date": "6/24/25 10:32a ET",
+          "transaction_date": "6/24/25 10:32a ET",
+          "action": "Sell",
+          "amount": 15,
+          "price": "$232.39",
+          "status": "Completed"
+        },
+        {
+          "symbol": "NVDA",
+          "order_date": "6/13/25 12:43p ET",
+          "transaction_date": "6/13/25 12:43p ET",
+          "action": "Buy",
+          "amount": 43,
+          "price": "$143.26",
+          "status": "Completed"
+        },
+        {
+          "symbol": "DIS",
+          "order_date": "6/13/25 12:29p ET",
+          "transaction_date": "6/13/25 12:29p ET",
+          "action": "Sell",
+          "amount": 51,
+          "price": "$118.04",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BA",
+          "order_date": "6/13/25 12:24p ET",
+          "transaction_date": "6/13/25 12:24p ET",
+          "action": "Buy",
+          "amount": 716,
+          "price": "$201.54",
+          "status": "Completed"
+        },
+        {
+          "symbol": "XOM",
+          "order_date": "6/13/25 12:23p ET",
+          "transaction_date": "6/13/25 12:23p ET",
+          "action": "Buy",
+          "amount": 1025,
+          "price": "$111.35",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:02.431124"
+    },
+    {
+      "public_id": "XArvdHeUXb1q",
+      "name": "Griffin Fanger",
+      "rank": 9,
+      "portfolio_value": 1044641.33,
+      "return_percentage": 4.464133,
+      "return_dollars": 44641.33,
+      "transactions": [
+        {
+          "symbol": "GS",
+          "order_date": "7/2/25 11:55a ET",
+          "transaction_date": "7/2/25 11:55a ET",
+          "action": "Buy",
+          "amount": 50,
+          "price": "$717.62",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PANW",
+          "order_date": "7/2/25 11:54a ET",
+          "transaction_date": "7/2/25 11:55a ET",
+          "action": "Buy",
+          "amount": 500,
+          "price": "$196.02",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSLA",
+          "order_date": "7/2/25 11:52a ET",
+          "transaction_date": "7/2/25 11:52a ET",
+          "action": "Cover",
+          "amount": 450,
+          "price": "$313.55",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSLA",
+          "order_date": "7/2/25 9:30a ET",
+          "transaction_date": "7/2/25 9:30a ET",
+          "action": "Short",
+          "amount": 450,
+          "price": "$309.78",
+          "status": "Completed"
+        },
+        {
+          "symbol": "AMGN",
+          "order_date": "7/2/25 9:28a ET",
+          "transaction_date": "7/2/25 9:30a ET",
+          "action": "Sell",
+          "amount": 150,
+          "price": "$291.03",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PANW",
+          "order_date": "7/2/25 9:06a ET",
+          "transaction_date": "7/2/25 9:30a ET",
+          "action": "Sell",
+          "amount": 500,
+          "price": "$196.44",
+          "status": "Completed"
+        },
+        {
+          "symbol": "JPM",
+          "order_date": "6/18/25 1:01p ET",
+          "transaction_date": "6/18/25 1:01p ET",
+          "action": "Buy",
+          "amount": 200,
+          "price": "$274.59",
+          "status": "Completed"
+        },
+        {
+          "symbol": "AAPL",
+          "order_date": "6/18/25 1:01p ET",
+          "transaction_date": "6/18/25 1:01p ET",
+          "action": "Sell",
+          "amount": 150,
+          "price": "$196.38",
+          "status": "Completed"
+        },
+        {
+          "symbol": "DKS",
+          "order_date": "6/18/25 11:18a ET",
+          "transaction_date": "6/18/25 11:18a ET",
+          "action": "Buy",
+          "amount": 300,
+          "price": "$175.05",
+          "status": "Completed"
+        },
+        {
+          "symbol": "SLM",
+          "order_date": "6/18/25 11:16a ET",
+          "transaction_date": "6/18/25 11:16a ET",
+          "action": "Buy",
+          "amount": 1000,
+          "price": "$31.81",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:04.507095"
+    },
+    {
+      "public_id": "9BaDE7wJmTD2",
+      "name": "Milla MacLeod",
+      "rank": 6,
+      "portfolio_value": 1053086.7399,
+      "return_percentage": 5.30867399,
+      "return_dollars": 53086.7399,
+      "transactions": [
+        {
+          "symbol": "MSFT",
+          "order_date": "7/3/25 1:28p ET",
+          "transaction_date": "7/7/25 9:30a ET",
+          "action": "Sell",
+          "amount": 114,
+          "price": "$497.38",
+          "status": "Completed"
+        },
+        {
+          "symbol": "FDX",
+          "order_date": "7/3/25 10:37a ET",
+          "transaction_date": "7/3/25 10:37a ET",
+          "action": "Buy",
+          "amount": 181,
+          "price": "$241.10",
+          "status": "Completed"
+        },
+        {
+          "symbol": "HIMS",
+          "order_date": "7/3/25 10:35a ET",
+          "transaction_date": "7/3/25 10:36a ET",
+          "action": "Sell",
+          "amount": 488,
+          "price": "$47.83",
+          "status": "Completed"
+        },
+        {
+          "symbol": "LULU",
+          "order_date": "7/2/25 4:14p ET",
+          "transaction_date": "7/3/25 9:30a ET",
+          "action": "Sell",
+          "amount": 83,
+          "price": "$247.37",
+          "status": "Completed"
+        },
+        {
+          "symbol": "HIMS",
+          "order_date": "7/2/25 10:52a ET",
+          "transaction_date": "7/2/25 10:52a ET",
+          "action": "Buy",
+          "amount": 488,
+          "price": "$47.48",
+          "status": "Completed"
+        },
+        {
+          "symbol": "LYFT",
+          "order_date": "7/2/25 10:46a ET",
+          "transaction_date": "7/2/25 10:46a ET",
+          "action": "Buy",
+          "amount": 2556,
+          "price": "$15.85",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CRM",
+          "order_date": "7/2/25 10:45a ET",
+          "transaction_date": "7/2/25 10:45a ET",
+          "action": "Buy",
+          "amount": 260,
+          "price": "$267.54",
+          "status": "Completed"
+        },
+        {
+          "symbol": "GOOGL",
+          "order_date": "7/2/25 10:41a ET",
+          "transaction_date": "7/2/25 10:41a ET",
+          "action": "Sell",
+          "amount": 751,
+          "price": "$176.81",
+          "status": "Completed"
+        },
+        {
+          "symbol": "HD",
+          "order_date": "7/2/25 10:39a ET",
+          "transaction_date": "7/2/25 10:39a ET",
+          "action": "Sell",
+          "amount": 1,
+          "price": "$371.51",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CRM",
+          "order_date": "7/2/25 10:38a ET",
+          "transaction_date": "7/2/25 10:39a ET",
+          "action": "Buy",
+          "amount": 153,
+          "price": "$267.85",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:06.703253"
+    },
+    {
+      "public_id": "zvZv24UsJIFb",
+      "name": "Eileen Carey",
+      "rank": 14,
+      "portfolio_value": 1034667.1874,
+      "return_percentage": 3.46671874,
+      "return_dollars": 34667.1874,
+      "transactions": [
+        {
+          "symbol": "VOO",
+          "order_date": "7/1/25 10:23a ET",
+          "transaction_date": "7/1/25 10:23a ET",
+          "action": "Buy",
+          "amount": 177,
+          "price": "$567.33",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TBLL",
+          "order_date": "7/1/25 9:22a ET",
+          "transaction_date": "7/1/25 9:30a ET",
+          "action": "Sell",
+          "amount": 954,
+          "price": "$105.55",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TBLL",
+          "order_date": "7/1/25 9:14a ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 950,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "TBLL",
+          "order_date": "6/23/25 9:51a ET",
+          "transaction_date": "6/23/25 9:52a ET",
+          "action": "Buy",
+          "amount": 2383,
+          "price": "$105.45",
+          "status": "Completed"
+        },
+        {
+          "symbol": "VOO",
+          "order_date": "6/20/25 12:08p ET",
+          "transaction_date": "6/20/25 12:08p ET",
+          "action": "Buy",
+          "amount": 456,
+          "price": "$548.40",
+          "status": "Completed"
+        },
+        {
+          "symbol": "QQQ",
+          "order_date": "6/20/25 12:03p ET",
+          "transaction_date": "6/20/25 12:03p ET",
+          "action": "Buy",
+          "amount": 946,
+          "price": "$527.03",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:08.788627"
+    },
+    {
+      "public_id": "LXCJkeLdPbuA",
+      "name": "Caroline Gundersen",
+      "rank": 15,
+      "portfolio_value": 1029370.7820475363,
+      "return_percentage": 2.937078204753633,
+      "return_dollars": 29370.782047536326,
+      "transactions": [
+        {
+          "symbol": "VLISX",
+          "order_date": "6/17/25 3:57p ET",
+          "transaction_date": "6/17/25 5:59p ET",
+          "action": "Buy",
+          "amount": 0,
+          "price": "$573.25",
+          "status": "Completed"
+        },
+        {
+          "symbol": "VMFGX",
+          "order_date": "6/17/25 3:57p ET",
+          "transaction_date": "6/17/25 5:59p ET",
+          "action": "Buy",
+          "amount": 0,
+          "price": "$437.23",
+          "status": "Completed"
+        },
+        {
+          "symbol": "VSMSX",
+          "order_date": "6/17/25 3:56p ET",
+          "transaction_date": "6/17/25 5:59p ET",
+          "action": "Buy",
+          "amount": 0,
+          "price": "$394.77",
+          "status": "Completed"
+        },
+        {
+          "symbol": "AEPFX",
+          "order_date": "6/17/25 3:55p ET",
+          "transaction_date": "6/17/25 5:59p ET",
+          "action": "Buy",
+          "amount": 0,
+          "price": "$58.54",
+          "status": "Completed"
+        },
+        {
+          "symbol": "SSGBF",
+          "order_date": "6/17/25 3:53p ET",
+          "transaction_date": "6/18/25 3:48p ET",
+          "action": "Buy",
+          "amount": 2995,
+          "price": "$115.17",
+          "status": "Completed"
+        },
+        {
+          "symbol": "VSPGX",
+          "order_date": "6/17/25 3:28p ET",
+          "transaction_date": "",
+          "action": "BuyCanceled:",
+          "amount": 0,
+          "price": "N/A",
+          "status": "Canceled"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:11.224463"
+    },
+    {
+      "public_id": "lzmy429KW9qb",
+      "name": "Jack Pinsky",
+      "rank": 16,
+      "portfolio_value": 1023569.4119999999,
+      "return_percentage": 2.35694119999999,
+      "return_dollars": 23569.4119999999,
+      "transactions": [
+        {
+          "symbol": "UUU",
+          "order_date": "7/9/25 10:09a ET",
+          "transaction_date": "7/9/25 10:19a ET",
+          "action": "Sell",
+          "amount": 17661,
+          "price": "$3.69",
+          "status": "Completed"
+        },
+        {
+          "symbol": "VCIG",
+          "order_date": "7/9/25 9:52a ET",
+          "transaction_date": "7/9/25 9:52a ET",
+          "action": "Short",
+          "amount": 352330,
+          "price": "$1.49",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/9/25 9:47a ET",
+          "transaction_date": "7/9/25 9:47a ET",
+          "action": "Cover",
+          "amount": 34095,
+          "price": "$6.29",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/9/25 9:45a ET",
+          "transaction_date": "7/9/25 9:45a ET",
+          "action": "Cover",
+          "amount": 11520,
+          "price": "$6.36",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/9/25 9:43a ET",
+          "transaction_date": "7/9/25 9:43a ET",
+          "action": "Cover",
+          "amount": 9021,
+          "price": "$6.08",
+          "status": "Completed"
+        },
+        {
+          "symbol": "XFOR",
+          "order_date": "7/9/25 9:42a ET",
+          "transaction_date": "7/9/25 9:42a ET",
+          "action": "Cover",
+          "amount": 123644,
+          "price": "$1.70",
+          "status": "Completed"
+        },
+        {
+          "symbol": "JXG",
+          "order_date": "7/9/25 9:39a ET",
+          "transaction_date": "7/9/25 9:40a ET",
+          "action": "Short",
+          "amount": 87942,
+          "price": "$1.20",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/9/25 9:35a ET",
+          "transaction_date": "7/9/25 9:35a ET",
+          "action": "Cover",
+          "amount": 10933,
+          "price": "$5.50",
+          "status": "Completed"
+        },
+        {
+          "symbol": "UUU",
+          "order_date": "7/9/25 9:35a ET",
+          "transaction_date": "7/9/25 9:53a ET",
+          "action": "Sell",
+          "amount": 21371,
+          "price": "$3.70",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TBF",
+          "order_date": "7/9/25 9:34a ET",
+          "transaction_date": "7/9/25 9:36a ET",
+          "action": "Sell",
+          "amount": 2643,
+          "price": "$24.66",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:13.435882"
+    },
+    {
+      "public_id": "HmJ0d8Dzu6nT",
+      "name": "Leah Wong",
+      "rank": 17,
+      "portfolio_value": 1010393.42,
+      "return_percentage": 1.039342,
+      "return_dollars": 10393.42,
+      "transactions": [
+        {
+          "symbol": "COST",
+          "order_date": "7/7/25 9:52a ET",
+          "transaction_date": "7/7/25 9:52a ET",
+          "action": "Sell",
+          "amount": 100,
+          "price": "$982.01",
+          "status": "Completed"
+        },
+        {
+          "symbol": "ORCL",
+          "order_date": "7/3/25 1:22p ET",
+          "transaction_date": "7/7/25 9:30a ET",
+          "action": "Buy",
+          "amount": 100,
+          "price": "$234.50",
+          "status": "Completed"
+        },
+        {
+          "symbol": "SNOW",
+          "order_date": "7/3/25 1:21p ET",
+          "transaction_date": "7/7/25 9:30a ET",
+          "action": "Buy",
+          "amount": 100,
+          "price": "$220.81",
+          "status": "Completed"
+        },
+        {
+          "symbol": "ZS",
+          "order_date": "7/3/25 1:21p ET",
+          "transaction_date": "7/7/25 9:30a ET",
+          "action": "Buy",
+          "amount": 100,
+          "price": "$312.86",
+          "status": "Completed"
+        },
+        {
+          "symbol": "COST",
+          "order_date": "7/2/25 3:03p ET",
+          "transaction_date": "7/2/25 3:03p ET",
+          "action": "Sell",
+          "amount": 400,
+          "price": "$982.32",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BA",
+          "order_date": "7/2/25 2:50p ET",
+          "transaction_date": "7/2/25 2:50p ET",
+          "action": "Buy",
+          "amount": 200,
+          "price": "$210.92",
+          "status": "Completed"
+        },
+        {
+          "symbol": "COST",
+          "order_date": "6/27/25 12:24p ET",
+          "transaction_date": "6/27/25 12:24p ET",
+          "action": "Buy",
+          "amount": 500,
+          "price": "$992.17",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PEP",
+          "order_date": "6/26/25 3:40p ET",
+          "transaction_date": "6/26/25 3:40p ET",
+          "action": "Buy",
+          "amount": 200,
+          "price": "$128.04",
+          "status": "Completed"
+        },
+        {
+          "symbol": "NVDA",
+          "order_date": "6/25/25 9:51a ET",
+          "transaction_date": "6/25/25 9:51a ET",
+          "action": "Buy",
+          "amount": 1000,
+          "price": "$150.98",
+          "status": "Completed"
+        },
+        {
+          "symbol": "GE",
+          "order_date": "6/20/25 2:37p ET",
+          "transaction_date": "6/20/25 2:37p ET",
+          "action": "Buy",
+          "amount": 200,
+          "price": "$238.92",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:15.587505"
+    },
+    {
+      "public_id": "eDoajzvdSnYh",
+      "name": "Katie Perritt",
+      "rank": 18,
+      "portfolio_value": 1008844.8631152741,
+      "return_percentage": 0.8844863115274143,
+      "return_dollars": 8844.863115274144,
+      "transactions": [
+        {
+          "symbol": "BBAI",
+          "order_date": "7/9/25 1:07p ET",
+          "transaction_date": "7/9/25 1:07p ET",
+          "action": "Sell",
+          "amount": 3000,
+          "price": "$7.14",
+          "status": "Completed"
+        },
+        {
+          "symbol": "VFC",
+          "order_date": "7/8/25 2:00p ET",
+          "transaction_date": "7/8/25 2:00p ET",
+          "action": "Buy",
+          "amount": 400,
+          "price": "$12.52",
+          "status": "Completed"
+        },
+        {
+          "symbol": "AMZN",
+          "order_date": "7/8/25 11:56a ET",
+          "transaction_date": "7/8/25 11:56a ET",
+          "action": "Buy",
+          "amount": 150,
+          "price": "$220.64",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 3:04p ET",
+          "transaction_date": "7/2/25 3:04p ET",
+          "action": "Sell",
+          "amount": 40000,
+          "price": "$1.46",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 2:36p ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 30000,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 2:33p ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 50000,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/2/25 12:38p ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 80000,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/1/25 9:51a ET",
+          "transaction_date": "",
+          "action": "SellCanceled:",
+          "amount": 80000,
+          "price": "N/A",
+          "status": "Canceled"
+        },
+        {
+          "symbol": "BLNE",
+          "order_date": "7/1/25 9:44a ET",
+          "transaction_date": "7/1/25 9:44a ET",
+          "action": "Buy",
+          "amount": 80000,
+          "price": "$1.39",
+          "status": "Completed"
+        },
+        {
+          "symbol": "WDH",
+          "order_date": "6/30/25 2:48p ET",
+          "transaction_date": "6/30/25 2:54p ET",
+          "action": "Sell",
+          "amount": 42000,
+          "price": "$1.36",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:18.155271"
+    },
+    {
+      "public_id": "lSznByCwYnaw",
+      "name": "Sam LoCoco",
+      "rank": 12,
+      "portfolio_value": 1040666.9363000001,
+      "return_percentage": 4.06669363000001,
+      "return_dollars": 40666.9363000001,
+      "transactions": [
+        {
+          "symbol": "BTBT",
+          "order_date": "7/9/25 10:05a ET",
+          "transaction_date": "7/9/25 10:05a ET",
+          "action": "Buy",
+          "amount": 12288,
+          "price": "$3.67",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BTBT",
+          "order_date": "7/9/25 9:57a ET",
+          "transaction_date": "7/9/25 9:57a ET",
+          "action": "Buy",
+          "amount": 61029,
+          "price": "$3.77",
+          "status": "Completed"
+        },
+        {
+          "symbol": "PROK",
+          "order_date": "7/8/25 4:13p ET",
+          "transaction_date": "7/9/25 9:30a ET",
+          "action": "Buy",
+          "amount": 14989,
+          "price": "$5.81",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BTBT",
+          "order_date": "7/8/25 3:32p ET",
+          "transaction_date": "7/8/25 3:32p ET",
+          "action": "Buy",
+          "amount": 24105,
+          "price": "$3.75",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/8/25 2:16p ET",
+          "transaction_date": "7/8/25 2:16p ET",
+          "action": "Sell",
+          "amount": 1236,
+          "price": "$116.11",
+          "status": "Completed"
+        },
+        {
+          "symbol": "MBIO",
+          "order_date": "7/8/25 11:54a ET",
+          "transaction_date": "7/8/25 11:54a ET",
+          "action": "Short",
+          "amount": 36175,
+          "price": "$2.78",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BTBT",
+          "order_date": "7/8/25 10:03a ET",
+          "transaction_date": "7/8/25 10:03a ET",
+          "action": "Buy",
+          "amount": 23815,
+          "price": "$3.90",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/8/25 9:57a ET",
+          "transaction_date": "7/8/25 9:57a ET",
+          "action": "Buy",
+          "amount": 1236,
+          "price": "$127.00",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/8/25 9:54a ET",
+          "transaction_date": "7/8/25 9:54a ET",
+          "action": "Sell",
+          "amount": 5703,
+          "price": "$126.13",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BTBT",
+          "order_date": "7/8/25 9:53a ET",
+          "transaction_date": "7/8/25 9:53a ET",
+          "action": "Buy",
+          "amount": 12974,
+          "price": "$4.03",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:20.362954"
+    },
+    {
+      "public_id": "3zPM3BlrtN6C",
+      "name": "Shega Case",
+      "rank": 19,
+      "portfolio_value": 817844.5423,
+      "return_percentage": -18.21554577,
+      "return_dollars": -182155.4577,
+      "transactions": [
+        {
+          "symbol": "BMNR",
+          "order_date": "7/3/25 12:44p ET",
+          "transaction_date": "7/3/25 12:44p ET",
+          "action": "Buy",
+          "amount": 7174,
+          "price": "$152.61",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSM",
+          "order_date": "7/3/25 12:43p ET",
+          "transaction_date": "7/3/25 12:43p ET",
+          "action": "Sell",
+          "amount": 1583,
+          "price": "$235.70",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CVNA",
+          "order_date": "7/3/25 12:43p ET",
+          "transaction_date": "7/3/25 12:43p ET",
+          "action": "Sell",
+          "amount": 2130,
+          "price": "$347.02",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CVNA",
+          "order_date": "7/3/25 11:41a ET",
+          "transaction_date": "7/3/25 11:41a ET",
+          "action": "Buy",
+          "amount": 2130,
+          "price": "$348.34",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/3/25 11:32a ET",
+          "transaction_date": "7/3/25 11:32a ET",
+          "action": "Sell",
+          "amount": 7173,
+          "price": "$103.32",
+          "status": "Completed"
+        },
+        {
+          "symbol": "BMNR",
+          "order_date": "7/3/25 11:31a ET",
+          "transaction_date": "7/3/25 11:31a ET",
+          "action": "Buy",
+          "amount": 7173,
+          "price": "$104.45",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CVNA",
+          "order_date": "7/3/25 11:30a ET",
+          "transaction_date": "7/3/25 11:30a ET",
+          "action": "Sell",
+          "amount": 2155,
+          "price": "$348.17",
+          "status": "Completed"
+        },
+        {
+          "symbol": "CVNA",
+          "order_date": "7/2/25 3:47p ET",
+          "transaction_date": "7/2/25 3:48p ET",
+          "action": "Buy",
+          "amount": 2155,
+          "price": "$343.75",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSM",
+          "order_date": "7/2/25 3:47p ET",
+          "transaction_date": "7/2/25 3:47p ET",
+          "action": "Sell",
+          "amount": 3094,
+          "price": "$233.39",
+          "status": "Completed"
+        },
+        {
+          "symbol": "TSM",
+          "order_date": "7/2/25 12:24p ET",
+          "transaction_date": "7/2/25 12:24p ET",
+          "action": "Buy",
+          "amount": 4677,
+          "price": "$232.60",
+          "status": "Completed"
+        }
+      ],
+      "last_updated": "2025-07-09T16:04:22.483049"
+    }
+  ],
+  "activity_feed": [
+    {
+      "timestamp": "7/9/25 3:43p ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Buy",
+      "symbol": "TLIH",
+      "amount": 17853,
+      "price": "$4.90",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/9/25 3:41p ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Sell",
+      "symbol": "MPU",
+      "amount": 40490,
+      "price": "$2.21",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/9/25 3:00p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Cover",
+      "symbol": "WOLF",
+      "amount": 197329,
+      "price": "$2.02",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/9/25 2:58p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Short",
+      "symbol": "WOLF",
+      "amount": 197329,
+      "price": "$2.02",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/9/25 2:50p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Sell",
+      "symbol": "SY",
+      "amount": 47994,
+      "price": "$4.25",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/9/25 2:49p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Sell",
+      "symbol": "WOLF",
+      "amount": 14691,
+      "price": "$2.08",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/9/25 2:48p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Buy",
+      "symbol": "UBRL",
+      "amount": 19025,
+      "price": "$35.45",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:15p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Sell",
+      "symbol": "UNH",
+      "amount": 359,
+      "price": "$302.59",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:15p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Sell",
+      "symbol": "MSFT",
+      "amount": 206,
+      "price": "$502.21",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:14p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Sell",
+      "symbol": "CAT",
+      "amount": 690,
+      "price": "$403.14",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:14p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Sell",
+      "symbol": "XOM",
+      "amount": 466,
+      "price": "$113.51",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:13p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Sell",
+      "symbol": "CRM",
+      "amount": 398,
+      "price": "$270.53",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:13p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Buy",
+      "symbol": "CAT",
+      "amount": 690,
+      "price": "$402.60",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:13p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Sell",
+      "symbol": "CAT",
+      "amount": 114,
+      "price": "$402.60",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:13p ET",
+      "player_name": "Luke Sagone",
+      "player_rank": 11,
+      "action": "Sell",
+      "symbol": "BA",
+      "amount": 1221,
+      "price": "$227.44",
+      "portfolio_value": 1043374.572
+    },
+    {
+      "timestamp": "7/9/25 2:12p ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Buy",
+      "symbol": "BMGL",
+      "amount": 18430,
+      "price": "$3.08",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/9/25 1:07p ET",
+      "player_name": "Katie Perritt",
+      "player_rank": 18,
+      "action": "Sell",
+      "symbol": "BBAI",
+      "amount": 3000,
+      "price": "$7.14",
+      "portfolio_value": 1008844.8631152741
+    },
+    {
+      "timestamp": "7/9/25 11:41a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Short",
+      "symbol": "BMNR",
+      "amount": 25990,
+      "price": "$60.36",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "7/9/25 11:40a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Sell",
+      "symbol": "BMNR",
+      "amount": 22533,
+      "price": "$60.70",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "7/9/25 11:36a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Buy",
+      "symbol": "VRNA",
+      "amount": 999,
+      "price": "$104.81",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/9/25 11:31a ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Buy",
+      "symbol": "BMNR",
+      "amount": 230,
+      "price": "$64.22",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/9/25 11:29a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Buy",
+      "symbol": "BMNR",
+      "amount": 22533,
+      "price": "$62.12",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "7/9/25 10:49a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Buy",
+      "symbol": "RYTM",
+      "amount": 2102,
+      "price": "$81.83",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/9/25 10:45a ET",
+      "player_name": "cj deslongchamps",
+      "player_rank": 2,
+      "action": "Short",
+      "symbol": "PHH",
+      "amount": 359328,
+      "price": "$1.32",
+      "portfolio_value": 1315450.1843
+    },
+    {
+      "timestamp": "7/9/25 10:27a ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Short",
+      "symbol": "PROK",
+      "amount": 4404,
+      "price": "$5.93",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/9/25 10:21a ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Buy",
+      "symbol": "BMGL",
+      "amount": 45598,
+      "price": "$3.09",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/9/25 10:17a ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Sell",
+      "symbol": "PROK",
+      "amount": 25214,
+      "price": "$5.96",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/9/25 10:17a ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Sell",
+      "symbol": "HIVE",
+      "amount": 43909,
+      "price": "$2.15",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/9/25 10:09a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Sell",
+      "symbol": "UUU",
+      "amount": 17661,
+      "price": "$3.69",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 10:05a ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Buy",
+      "symbol": "BTBT",
+      "amount": 12288,
+      "price": "$3.67",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/9/25 9:57a ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Buy",
+      "symbol": "BTBT",
+      "amount": 61029,
+      "price": "$3.77",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/9/25 9:52a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Short",
+      "symbol": "VCIG",
+      "amount": 352330,
+      "price": "$1.49",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:47a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Cover",
+      "symbol": "PROK",
+      "amount": 34095,
+      "price": "$6.29",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:45a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Cover",
+      "symbol": "PROK",
+      "amount": 11520,
+      "price": "$6.36",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:43a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Cover",
+      "symbol": "PROK",
+      "amount": 9021,
+      "price": "$6.08",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:42a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Cover",
+      "symbol": "XFOR",
+      "amount": 123644,
+      "price": "$1.70",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:39a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Short",
+      "symbol": "JXG",
+      "amount": 87942,
+      "price": "$1.20",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:35a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Cover",
+      "symbol": "PROK",
+      "amount": 10933,
+      "price": "$5.50",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:35a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Sell",
+      "symbol": "UUU",
+      "amount": 21371,
+      "price": "$3.70",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/9/25 9:34a ET",
+      "player_name": "cj deslongchamps",
+      "player_rank": 2,
+      "action": "Short",
+      "symbol": "PHH",
+      "amount": 382707,
+      "price": "$1.98",
+      "portfolio_value": 1315450.1843
+    },
+    {
+      "timestamp": "7/9/25 9:34a ET",
+      "player_name": "Jack Pinsky",
+      "player_rank": 16,
+      "action": "Sell",
+      "symbol": "TBF",
+      "amount": 2643,
+      "price": "$24.66",
+      "portfolio_value": 1023569.4119999999
+    },
+    {
+      "timestamp": "7/8/25 4:13p ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Buy",
+      "symbol": "PROK",
+      "amount": 14989,
+      "price": "$5.81",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 3:54p ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Buy",
+      "symbol": "PROK",
+      "amount": 23077,
+      "price": "$3.73",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/8/25 3:32p ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Buy",
+      "symbol": "BTBT",
+      "amount": 24105,
+      "price": "$3.75",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 2:20p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Buy",
+      "symbol": "SY",
+      "amount": 115998,
+      "price": "$4.20",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/8/25 2:17p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Sell",
+      "symbol": "MSTR",
+      "amount": 1173,
+      "price": "$399.04",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/8/25 2:16p ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Sell",
+      "symbol": "BMNR",
+      "amount": 1236,
+      "price": "$116.11",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 2:02p ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Sell",
+      "symbol": "PROK",
+      "amount": 23432,
+      "price": "$4.00",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/8/25 2:00p ET",
+      "player_name": "Katie Perritt",
+      "player_rank": 18,
+      "action": "Buy",
+      "symbol": "VFC",
+      "amount": 400,
+      "price": "$12.52",
+      "portfolio_value": 1008844.8631152741
+    },
+    {
+      "timestamp": "7/8/25 12:07p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Buy",
+      "symbol": "WOLF",
+      "amount": 137422,
+      "price": "$2.73",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/8/25 12:03p ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Buy",
+      "symbol": "MSTR",
+      "amount": 1173,
+      "price": "$395.28",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/8/25 11:56a ET",
+      "player_name": "Katie Perritt",
+      "player_rank": 18,
+      "action": "Buy",
+      "symbol": "AMZN",
+      "amount": 150,
+      "price": "$220.64",
+      "portfolio_value": 1008844.8631152741
+    },
+    {
+      "timestamp": "7/8/25 11:54a ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Short",
+      "symbol": "MBIO",
+      "amount": 36175,
+      "price": "$2.78",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 11:18a ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Buy",
+      "symbol": "PROK",
+      "amount": 42523,
+      "price": "$2.70",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/8/25 11:17a ET",
+      "player_name": "Ryan Carew",
+      "player_rank": 7,
+      "action": "Sell",
+      "symbol": "HIVE",
+      "amount": 40420,
+      "price": "$2.29",
+      "portfolio_value": 1050078.2349
+    },
+    {
+      "timestamp": "7/8/25 10:03a ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Buy",
+      "symbol": "BTBT",
+      "amount": 23815,
+      "price": "$3.90",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 9:57a ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Short",
+      "symbol": "XXII",
+      "amount": 16718,
+      "price": "$5.95",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/8/25 9:57a ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Buy",
+      "symbol": "BMNR",
+      "amount": 1236,
+      "price": "$127.00",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 9:54a ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Sell",
+      "symbol": "BMNR",
+      "amount": 5703,
+      "price": "$126.13",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 9:53a ET",
+      "player_name": "Sam LoCoco",
+      "player_rank": 12,
+      "action": "Buy",
+      "symbol": "BTBT",
+      "amount": 12974,
+      "price": "$4.03",
+      "portfolio_value": 1040666.9363000001
+    },
+    {
+      "timestamp": "7/8/25 9:48a ET",
+      "player_name": "Ethan Houseworth",
+      "player_rank": 8,
+      "action": "Buy",
+      "symbol": "COIN",
+      "amount": 140,
+      "price": "$357.37",
+      "portfolio_value": 1046778.6602
+    },
+    {
+      "timestamp": "7/8/25 9:42a ET",
+      "player_name": "Will Hemauer",
+      "player_rank": 3,
+      "action": "Buy",
+      "symbol": "SY",
+      "amount": 34466,
+      "price": "$4.42",
+      "portfolio_value": 1236616.2400175272
+    },
+    {
+      "timestamp": "7/8/25 9:01a ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Short",
+      "symbol": "XXII",
+      "amount": 26189,
+      "price": "$6.22",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/8/25 8:55a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Sell",
+      "symbol": "FRO",
+      "amount": 6575,
+      "price": "$18.50",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/7/25 2:42p ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Sell",
+      "symbol": "SVRE",
+      "amount": 28180,
+      "price": "$3.21",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/7/25 2:42p ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Cover",
+      "symbol": "SVRE",
+      "amount": 19580,
+      "price": "$3.20",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/7/25 1:56p ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Short",
+      "symbol": "XXII",
+      "amount": 16720,
+      "price": "$6.30",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/7/25 10:22a ET",
+      "player_name": "Sebastian Babu",
+      "player_rank": 4,
+      "action": "Buy",
+      "symbol": "SVRE",
+      "amount": 28180,
+      "price": "$2.64",
+      "portfolio_value": 1183260.6033
+    },
+    {
+      "timestamp": "7/7/25 10:22a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Sell",
+      "symbol": "RIOT",
+      "amount": 11104,
+      "price": "$11.24",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/7/25 10:13a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Buy",
+      "symbol": "FRO",
+      "amount": 6575,
+      "price": "$18.46",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/7/25 10:10a ET",
+      "player_name": "Ethan Houseworth",
+      "player_rank": 8,
+      "action": "Buy",
+      "symbol": "COIN",
+      "amount": 138,
+      "price": "$358.36",
+      "portfolio_value": 1046778.6602
+    },
+    {
+      "timestamp": "7/7/25 9:54a ET",
+      "player_name": "Ethan Houseworth",
+      "player_rank": 8,
+      "action": "Sell",
+      "symbol": "INOD",
+      "amount": 3049,
+      "price": "$48.97",
+      "portfolio_value": 1046778.6602
+    },
+    {
+      "timestamp": "7/7/25 9:52a ET",
+      "player_name": "Ethan Houseworth",
+      "player_rank": 8,
+      "action": "Buy",
+      "symbol": "PLUG",
+      "amount": 141614,
+      "price": "$1.39",
+      "portfolio_value": 1046778.6602
+    },
+    {
+      "timestamp": "7/7/25 9:52a ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Sell",
+      "symbol": "COST",
+      "amount": 100,
+      "price": "$982.01",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "7/7/25 9:49a ET",
+      "player_name": "Ethan Houseworth",
+      "player_rank": 8,
+      "action": "Buy",
+      "symbol": "CDTX",
+      "amount": 4308,
+      "price": "$47.30",
+      "portfolio_value": 1046778.6602
+    },
+    {
+      "timestamp": "7/7/25 9:46a ET",
+      "player_name": "Ethan Houseworth",
+      "player_rank": 8,
+      "action": "Buy",
+      "symbol": "BBAI",
+      "amount": 40507,
+      "price": "$7.49",
+      "portfolio_value": 1046778.6602
+    },
+    {
+      "timestamp": "7/7/25 9:36a ET",
+      "player_name": "cj deslongchamps",
+      "player_rank": 2,
+      "action": "Buy",
+      "symbol": "DGXX",
+      "amount": 81665,
+      "price": "$2.86",
+      "portfolio_value": 1315450.1843
+    },
+    {
+      "timestamp": "7/7/25 9:34a ET",
+      "player_name": "Ethan Houseworth",
+      "player_rank": 8,
+      "action": "Sell",
+      "symbol": "TERN",
+      "amount": 19076,
+      "price": "$4.30",
+      "portfolio_value": 1046778.6602
+    },
+    {
+      "timestamp": "7/3/25 1:28p ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Sell",
+      "symbol": "MSFT",
+      "amount": 114,
+      "price": "$497.38",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/3/25 1:22p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "ORCL",
+      "amount": 100,
+      "price": "$234.50",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "7/3/25 1:21p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "SNOW",
+      "amount": 100,
+      "price": "$220.81",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "7/3/25 1:21p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "ZS",
+      "amount": 100,
+      "price": "$312.86",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "7/3/25 12:51p ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Sell",
+      "symbol": "MGNI",
+      "amount": 708,
+      "price": "$24.52",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/3/25 12:44p ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Buy",
+      "symbol": "BMNR",
+      "amount": 7174,
+      "price": "$152.61",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/3/25 12:43p ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Sell",
+      "symbol": "TSM",
+      "amount": 1583,
+      "price": "$235.70",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/3/25 12:43p ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Sell",
+      "symbol": "CVNA",
+      "amount": 2130,
+      "price": "$347.02",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/3/25 11:41a ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Buy",
+      "symbol": "CVNA",
+      "amount": 2130,
+      "price": "$348.34",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/3/25 11:32a ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Sell",
+      "symbol": "BMNR",
+      "amount": 7173,
+      "price": "$103.32",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/3/25 11:31a ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Buy",
+      "symbol": "BMNR",
+      "amount": 7173,
+      "price": "$104.45",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/3/25 11:30a ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Sell",
+      "symbol": "CVNA",
+      "amount": 2155,
+      "price": "$348.17",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/3/25 11:09a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Sell",
+      "symbol": "BMNR",
+      "amount": 9777,
+      "price": "$108.14",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "7/3/25 10:42a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Sell",
+      "symbol": "MSTR",
+      "amount": 1356,
+      "price": "$408.86",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "7/3/25 10:37a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Buy",
+      "symbol": "FDX",
+      "amount": 181,
+      "price": "$241.10",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/3/25 10:35a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Sell",
+      "symbol": "HIMS",
+      "amount": 488,
+      "price": "$47.83",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/3/25 9:04a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Buy",
+      "symbol": "DDOG",
+      "amount": 640,
+      "price": "$147.56",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/3/25 8:29a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Sell",
+      "symbol": "IREN",
+      "amount": 8421,
+      "price": "$15.97",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/2/25 4:14p ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Sell",
+      "symbol": "LULU",
+      "amount": 83,
+      "price": "$247.37",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/2/25 3:47p ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Buy",
+      "symbol": "CVNA",
+      "amount": 2155,
+      "price": "$343.75",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/2/25 3:47p ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Sell",
+      "symbol": "TSM",
+      "amount": 3094,
+      "price": "$233.39",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/2/25 3:04p ET",
+      "player_name": "Katie Perritt",
+      "player_rank": 18,
+      "action": "Sell",
+      "symbol": "BLNE",
+      "amount": 40000,
+      "price": "$1.46",
+      "portfolio_value": 1008844.8631152741
+    },
+    {
+      "timestamp": "7/2/25 3:03p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Sell",
+      "symbol": "COST",
+      "amount": 400,
+      "price": "$982.32",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "7/2/25 2:50p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "BA",
+      "amount": 200,
+      "price": "$210.92",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "7/2/25 2:43p ET",
+      "player_name": "cj deslongchamps",
+      "player_rank": 2,
+      "action": "Sell",
+      "symbol": "BLNE",
+      "amount": 676652,
+      "price": "$1.47",
+      "portfolio_value": 1315450.1843
+    },
+    {
+      "timestamp": "7/2/25 12:24p ET",
+      "player_name": "Shega Case",
+      "player_rank": 19,
+      "action": "Buy",
+      "symbol": "TSM",
+      "amount": 4677,
+      "price": "$232.60",
+      "portfolio_value": 817844.5423
+    },
+    {
+      "timestamp": "7/2/25 11:55a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Buy",
+      "symbol": "GS",
+      "amount": 50,
+      "price": "$717.62",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "7/2/25 11:54a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Buy",
+      "symbol": "PANW",
+      "amount": 500,
+      "price": "$196.02",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "7/2/25 11:52a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Cover",
+      "symbol": "TSLA",
+      "amount": 450,
+      "price": "$313.55",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "7/2/25 10:52a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Buy",
+      "symbol": "HIMS",
+      "amount": 488,
+      "price": "$47.48",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/2/25 10:46a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Buy",
+      "symbol": "LYFT",
+      "amount": 2556,
+      "price": "$15.85",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/2/25 10:45a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Buy",
+      "symbol": "CRM",
+      "amount": 260,
+      "price": "$267.54",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/2/25 10:41a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Sell",
+      "symbol": "GOOGL",
+      "amount": 751,
+      "price": "$176.81",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/2/25 10:39a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Sell",
+      "symbol": "HD",
+      "amount": 1,
+      "price": "$371.51",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/2/25 10:38a ET",
+      "player_name": "Milla MacLeod",
+      "player_rank": 6,
+      "action": "Buy",
+      "symbol": "CRM",
+      "amount": 153,
+      "price": "$267.85",
+      "portfolio_value": 1053086.7399
+    },
+    {
+      "timestamp": "7/2/25 9:42a ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Buy",
+      "symbol": "RIOT",
+      "amount": 11104,
+      "price": "$11.83",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/2/25 9:30a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Short",
+      "symbol": "TSLA",
+      "amount": 450,
+      "price": "$309.78",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "7/2/25 9:28a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Sell",
+      "symbol": "AMGN",
+      "amount": 150,
+      "price": "$291.03",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "7/2/25 9:06a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Sell",
+      "symbol": "PANW",
+      "amount": 500,
+      "price": "$196.44",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "7/1/25 2:23p ET",
+      "player_name": "Steve Perkins",
+      "player_rank": 13,
+      "action": "Cover",
+      "symbol": "META",
+      "amount": 105,
+      "price": "$720.27",
+      "portfolio_value": 1038550.5257
+    },
+    {
+      "timestamp": "7/1/25 10:23a ET",
+      "player_name": "Eileen Carey",
+      "player_rank": 14,
+      "action": "Buy",
+      "symbol": "VOO",
+      "amount": 177,
+      "price": "$567.33",
+      "portfolio_value": 1034667.1874
+    },
+    {
+      "timestamp": "7/1/25 9:44a ET",
+      "player_name": "Katie Perritt",
+      "player_rank": 18,
+      "action": "Buy",
+      "symbol": "BLNE",
+      "amount": 80000,
+      "price": "$1.39",
+      "portfolio_value": 1008844.8631152741
+    },
+    {
+      "timestamp": "7/1/25 9:32a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Buy",
+      "symbol": "BMNR",
+      "amount": 9777,
+      "price": "$52.00",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "7/1/25 9:22a ET",
+      "player_name": "Eileen Carey",
+      "player_rank": 14,
+      "action": "Sell",
+      "symbol": "TBLL",
+      "amount": 954,
+      "price": "$105.55",
+      "portfolio_value": 1034667.1874
+    },
+    {
+      "timestamp": "7/1/25 9:13a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Sell",
+      "symbol": "MSTR",
+      "amount": 1302,
+      "price": "$395.50",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "6/30/25 2:48p ET",
+      "player_name": "Katie Perritt",
+      "player_rank": 18,
+      "action": "Sell",
+      "symbol": "WDH",
+      "amount": 42000,
+      "price": "$1.36",
+      "portfolio_value": 1008844.8631152741
+    },
+    {
+      "timestamp": "6/27/25 12:24p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "COST",
+      "amount": 500,
+      "price": "$992.17",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "6/26/25 5:35p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Sell",
+      "symbol": "TXG",
+      "amount": 8,
+      "price": "$11.83",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 5:35p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Cover",
+      "symbol": "TXG",
+      "amount": 7369,
+      "price": "$11.83",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 5:35p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Sell",
+      "symbol": "TSLQ",
+      "amount": 31147,
+      "price": "$17.55",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 3:40p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "PEP",
+      "amount": 200,
+      "price": "$128.04",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "6/26/25 12:02p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Sell",
+      "symbol": "NVDU",
+      "amount": 2706,
+      "price": "$96.22",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 12:01p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Sell",
+      "symbol": "FAS",
+      "amount": 606,
+      "price": "$162.49",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 12:01p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Sell",
+      "symbol": "DJT",
+      "amount": 4150,
+      "price": "$17.40",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 12:01p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Buy",
+      "symbol": "TXG",
+      "amount": 8,
+      "price": "$11.79",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 12:00p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Buy",
+      "symbol": "TSLQ",
+      "amount": 24697,
+      "price": "$17.10",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/26/25 12:00p ET",
+      "player_name": "Jack DePrey",
+      "player_rank": 5,
+      "action": "Sell",
+      "symbol": "TQQQ",
+      "amount": 5512,
+      "price": "$80.08",
+      "portfolio_value": 1064441.9288
+    },
+    {
+      "timestamp": "6/25/25 9:51a ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "NVDA",
+      "amount": 1000,
+      "price": "$150.98",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "6/24/25 10:42a ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Buy",
+      "symbol": "KSS",
+      "amount": 3,
+      "price": "$8.36",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/24/25 10:38a ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Buy",
+      "symbol": "CAMT",
+      "amount": 149,
+      "price": "$78.37",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/24/25 10:38a ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Sell",
+      "symbol": "DIS",
+      "amount": 99,
+      "price": "$118.55",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/24/25 10:35a ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Buy",
+      "symbol": "MP",
+      "amount": 1,
+      "price": "$35.74",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/24/25 10:34a ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Buy",
+      "symbol": "TSLA",
+      "amount": 10,
+      "price": "$342.47",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/24/25 10:32a ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Sell",
+      "symbol": "LULU",
+      "amount": 15,
+      "price": "$232.39",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/24/25 10:05a ET",
+      "player_name": "Sam Klein",
+      "player_rank": 1,
+      "action": "Buy",
+      "symbol": "MSTR",
+      "amount": 2658,
+      "price": "$375.92",
+      "portfolio_value": 1618935.7194
+    },
+    {
+      "timestamp": "6/23/25 9:51a ET",
+      "player_name": "Eileen Carey",
+      "player_rank": 14,
+      "action": "Buy",
+      "symbol": "TBLL",
+      "amount": 2383,
+      "price": "$105.45",
+      "portfolio_value": 1034667.1874
+    },
+    {
+      "timestamp": "6/20/25 2:37p ET",
+      "player_name": "Leah Wong",
+      "player_rank": 17,
+      "action": "Buy",
+      "symbol": "GE",
+      "amount": 200,
+      "price": "$238.92",
+      "portfolio_value": 1010393.42
+    },
+    {
+      "timestamp": "6/20/25 12:08p ET",
+      "player_name": "Eileen Carey",
+      "player_rank": 14,
+      "action": "Buy",
+      "symbol": "VOO",
+      "amount": 456,
+      "price": "$548.40",
+      "portfolio_value": 1034667.1874
+    },
+    {
+      "timestamp": "6/20/25 12:03p ET",
+      "player_name": "Eileen Carey",
+      "player_rank": 14,
+      "action": "Buy",
+      "symbol": "QQQ",
+      "amount": 946,
+      "price": "$527.03",
+      "portfolio_value": 1034667.1874
+    },
+    {
+      "timestamp": "6/18/25 1:01p ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Buy",
+      "symbol": "JPM",
+      "amount": 200,
+      "price": "$274.59",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "6/18/25 1:01p ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Sell",
+      "symbol": "AAPL",
+      "amount": 150,
+      "price": "$196.38",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "6/18/25 11:18a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Buy",
+      "symbol": "DKS",
+      "amount": 300,
+      "price": "$175.05",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "6/18/25 11:16a ET",
+      "player_name": "Griffin Fanger",
+      "player_rank": 9,
+      "action": "Buy",
+      "symbol": "SLM",
+      "amount": 1000,
+      "price": "$31.81",
+      "portfolio_value": 1044641.33
+    },
+    {
+      "timestamp": "6/17/25 3:57p ET",
+      "player_name": "Caroline Gundersen",
+      "player_rank": 15,
+      "action": "Buy",
+      "symbol": "VLISX",
+      "amount": 0,
+      "price": "$573.25",
+      "portfolio_value": 1029370.7820475363
+    },
+    {
+      "timestamp": "6/17/25 3:57p ET",
+      "player_name": "Caroline Gundersen",
+      "player_rank": 15,
+      "action": "Buy",
+      "symbol": "VMFGX",
+      "amount": 0,
+      "price": "$437.23",
+      "portfolio_value": 1029370.7820475363
+    },
+    {
+      "timestamp": "6/17/25 3:56p ET",
+      "player_name": "Caroline Gundersen",
+      "player_rank": 15,
+      "action": "Buy",
+      "symbol": "VSMSX",
+      "amount": 0,
+      "price": "$394.77",
+      "portfolio_value": 1029370.7820475363
+    },
+    {
+      "timestamp": "6/17/25 3:55p ET",
+      "player_name": "Caroline Gundersen",
+      "player_rank": 15,
+      "action": "Buy",
+      "symbol": "AEPFX",
+      "amount": 0,
+      "price": "$58.54",
+      "portfolio_value": 1029370.7820475363
+    },
+    {
+      "timestamp": "6/17/25 3:53p ET",
+      "player_name": "Caroline Gundersen",
+      "player_rank": 15,
+      "action": "Buy",
+      "symbol": "SSGBF",
+      "amount": 2995,
+      "price": "$115.17",
+      "portfolio_value": 1029370.7820475363
+    },
+    {
+      "timestamp": "6/13/25 12:43p ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Buy",
+      "symbol": "NVDA",
+      "amount": 43,
+      "price": "$143.26",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/13/25 12:29p ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Sell",
+      "symbol": "DIS",
+      "amount": 51,
+      "price": "$118.04",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/13/25 12:24p ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Buy",
+      "symbol": "BA",
+      "amount": 716,
+      "price": "$201.54",
+      "portfolio_value": 1043957.7257
+    },
+    {
+      "timestamp": "6/13/25 12:23p ET",
+      "player_name": "Lily Valimont",
+      "player_rank": 10,
+      "action": "Buy",
+      "symbol": "XOM",
+      "amount": 1025,
+      "price": "$111.35",
+      "portfolio_value": 1043957.7257
+    }
+  ]
+}
